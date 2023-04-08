@@ -29,8 +29,8 @@ repository: "jiangnanhugo/scibench"
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-# minimal_mistakes_skin: "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-minimal_mistakes_skin:  "contrast" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin:  "dirt" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+classes: wide
 plugins:
   - jekyll-feed
   - jekyll-include-cache
