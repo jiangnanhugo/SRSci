@@ -1,22 +1,19 @@
 
-# SRBench: A Living Benchmark for Symbolic Regression
+# SciBench: Scientist-in-the-loop benchmark for symbolic regression
 
-The methods for symbolic regression (SR) have come a long way since the days of Koza-style genetic programming (GP).
-Our goal with this project is to keep a living benchmark of modern symbolic regression, in the context of state-of-the-art ML methods.
+We propose a new evaluation paradigm (**Scibench**) that simulates an integrated framework of scientist-in-the-loop for data generation and a learning algorithm for symbolic expression discovery.
+The proposed benchmark standards solve a major gap in the existing benchmark evaluation: 
+- the input data (experiment trials) is not necessarily generated from random *i.i.d.* distribution 
+- the input data stays unchanged during learning.
 
-Currently these are the challenges, as we see it:
+Instead, from the history of experimental physics and  chemical element discovery, the data should be:
+- actively queried throughout the process of scientific discovery. 
 
-- Lack of cross-pollination between the GP community and the ML community (different conferences, journals, societies etc)
-- Lack of strong benchmarks in SR literature (small problems, toy datasets, weak comparator methods)
-- Lack of a unified framework for SR, or GP
-
-We are addressing the lack of pollination by making these comparisons open source, reproduceable and public, and hoping to share them widely with the entire ML research community.
-We are trying to address the lack of strong benchmarks by providing open source benchmarking of many SR methods on large sets of problems, with strong baselines for comparison. 
-To handle the lack of a unified framework, we've specified minimal requirements for contributing a method to this benchmark: a scikit-learn compatible API.
+Specifically, our **Scibench** offers a unified data query protocol for the learning algorithms. Equipped with this extra flexibility, the learning algorithms can determine what training data is needed to uncover the underlying symbolic expression. 
 
 # Benchmarked Methods
 
-This benchmark currently consists of **14** symbolic regression methods, **7** other ML methods, and **252** datasets from [PMLB](https://github.com/EpistasisLab/penn-ml-benchmarks), including real-world and synthetic datasets from processes with and without ground-truth models.
+This benchmark currently consists of **14** symbolic regression methods, **7** other ML methods, including real-world and synthetic datasets from processes with and without ground-truth models.
 
 Methods currently benchmarked:
 
@@ -91,23 +88,10 @@ See our [Contribution Guide.](https://cavalab.org/srbench/contributing/)
 
 # References
 
-A pre-print of the current version of the benchmark is available:
-[v2.0](https://github.com/EpistasisLab/regression-benchmark/releases/tag/v2.0) was reported in our Neurips 2021 paper: 
 
-La Cava, W., Orzechowski, P., Burlacu, B., de França, F. O., Virgolin, M., Jin, Y., Kommenda, M., & Moore, J. H. (2021). 
-Contemporary Symbolic Regression Methods and their Relative Performance. 
-_Neurips Track on Datasets and Benchmarks._
-[arXiv](https://arxiv.org/abs/2107.14351),
-[neurips.cc](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/c0c7c76d30bd3dcaefc96f40275bdc0a-Abstract-round1.html)
-
-[v1.0](https://github.com/EpistasisLab/regression-benchmark/releases/tag/v1.0) was reported in our GECCO 2018 paper: 
-
-Orzechowski, P., La Cava, W., & Moore, J. H. (2018). 
-Where are we now? A large benchmark study of recent symbolic regression methods. 
-GECCO 2018. [DOI](https://doi.org/10.1145/3205455.3205539), [Preprint](https://www.researchgate.net/profile/Patryk_Orzechowski/publication/324769381_Where_are_we_now_A_large_benchmark_study_of_recent_symbolic_regression_methods/links/5ae779b70f7e9b837d392dc9/Where-are-we-now-A-large-benchmark-study-of-recent-symbolic-regression-methods.pdf)
 
 
 # Contact
 
-William La Cava ([@lacava](https://github.com/lacava)), william dot lacava at childrens dot harvard dot edu
+Nan Jiang ([@jiangnanhugo](https://github.com/jiangnanhugo)), jiang631 at purdue dot edu
 
