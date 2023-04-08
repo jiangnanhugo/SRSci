@@ -1,0 +1,485 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>SciBench</title>
+<meta name="description" content="Scientist-in-the-loop benchmark for symbolic regression">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="SciBench">
+<meta property="og:title" content="SciBench">
+<meta property="og:url" content="http://localhost:4000/contributing/">
+
+
+  <meta property="og:description" content="Scientist-in-the-loop benchmark for symbolic regression">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/contributing/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<!-- [WGL] used https://gauger.io/fonticon/ -->
+<link rel="shortcut icon" href="/assets/images/favicon.ico">
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          SciBench
+          <span class="site-subtitle">Scientist-in-the-loop benchmark for symbolic regression</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/">SciBench</a>
+            </li><li class="masthead__menu-item">
+              <a href="/user-guide">User Guide</a>
+            </li><li class="masthead__menu-item">
+              <a href="/contributing/">Contributing</a>
+            </li><li class="masthead__menu-item">
+              <a href="/results/">Results</a>
+            </li><li class="masthead__menu-item">
+              <a href="/datasets/">Datasets</a>
+            </li><li class="masthead__menu-item">
+              <a href="/competition-2022/">Competition 2022</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name"></h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Maintained by <a href="https://github.com/jiangnanhugo">@jiangnanhugo</a> and many open-source contributors</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="https://github.com/jiangnanhugo/scibench/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub Repo</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <a href="/"><span class="nav__sub-title">SciBench</span></a>
+        
+
+        
+        <ul>
+          
+            <li><a href="/#benchmarked-methods">Benchmarked Methods</a></li>
+          
+            <li><a href="/#references">References</a></li>
+          
+            <li><a href="/#contact">Contact</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <a href="/user-guide"><span class="nav__sub-title">User Guide</span></a>
+        
+
+        
+        <ul>
+          
+            <li><a href="/user-guide/#installation">Installation</a></li>
+          
+            <li><a href="/user-guide/#reproducing-the-experiment">Reproducing the Experiment</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <a href="/contributing/"><span class="nav__sub-title">Contributing</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          <a href="/results/"><span class="nav__sub-title">Results</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          <a href="/datasets/"><span class="nav__sub-title">Datasets</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          <a href="/competition-2022/"><span class="nav__sub-title">Competition 2022</span></a>
+        
+
+        
+        <ul>
+          
+            <li><a href="/competition-2022/">Results</a></li>
+          
+            <li><a href="/competition-guide/">Competition Guide</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#contribution-guide">Contribution Guide</a></li><li><a href="#ground-rules">Ground Rules</a></li><li><a href="#how-to-contribute-an-sr-method">How to contribute an SR method</a><ul><li><a href="#requirements">Requirements</a><ul><li><a href="#returning-a-sympy-compatible-model-string">Returning a sympy compatible model string</a></li></ul></li></ul></li></ul>
+
+            </nav>
+          </aside>
+        
+        
+<h1 id="contribution-guide">Contribution Guide</h1>
+
+<p>We are happy to accept contributions of methods, as well as updates to the benchmarking framework. 
+Below we specify minimal requirements for contributing a method to this benchmark.</p>
+
+<h1 id="ground-rules">Ground Rules</h1>
+
+<ol>
+  <li>In general you should submit <a href="https://github.com/cavalab/srbench/compare">pull requests</a> to the <a href="https://github.com/cavalab/srbench/tree/dev">dev branch</a>.</li>
+  <li>Make the PR detailed and reference <a href="https://github.com/cavalab/srbench/issues">specific issues</a> if the PR is meant to address any.</li>
+  <li>Please be kind and please be patient. We will be, too.</li>
+</ol>
+
+<h1 id="how-to-contribute-an-sr-method">How to contribute an SR method</h1>
+
+<p>To contribute a symbolic regression method for benchmarking, fork the repo, make the changes listed below, and submit a pull request to the <code class="language-plaintext highlighter-rouge">dev</code> branch. 
+Once your method passes the basic tests and we’ve reviewed it, congrats! 
+We will plan to benchmark your method on hundreds of regression problems.</p>
+
+<h2 id="requirements">Requirements</h2>
+
+<ol>
+  <li>An open-source method with a <a href="https://scikit-learn.org/stable/developers/develop.html">scikit-learn compatible API</a></li>
+  <li>If your method uses a random seed, it should have a <code class="language-plaintext highlighter-rouge">random_state</code> attribute that can be set.</li>
+  <li>If your method is installable via pip or conda, add it to the <a href="https://github.com/cavalab/srbench/blob/master/environment.yml">environment file</a>. 
+  Otherwise, a bash install script in <code class="language-plaintext highlighter-rouge">experiment/methods/src/</code> named <code class="language-plaintext highlighter-rouge">your-method_install.sh</code> that installs your method. 
+  See <a href="https://github.com/cavalab/srbench/blob/master/experiment/methods/src/ellyn_install.sh">ellyn_install.sh</a> as an example. 
+  Our <a href="https://github.com/cavalab/srbench/blob/master/.github/workflows/test.yml">Github actions workflow</a> will automatically recognize it.</li>
+  <li>A minimal script in <code class="language-plaintext highlighter-rouge">experiment/methods/</code> that defines these items:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">est</code>: a sklearn-compatible <code class="language-plaintext highlighter-rouge">Regressor</code> object</li>
+      <li><code class="language-plaintext highlighter-rouge">hyper_params</code> : a dictionary or list of dictionaries specifying the hyperparameter search space</li>
+      <li><code class="language-plaintext highlighter-rouge">model(est)</code>: a function that returns a <a href="https://www.sympy.org"><strong>sympy-compatible</strong></a> string specifying the final model.</li>
+      <li>(optional): a dictionary named <code class="language-plaintext highlighter-rouge">eval_kwargs</code> that can specify method-specific arguments to <a href="https://github.com/cavalab/srbench/blob/e3ba2c71dd08b1aaa76414a0af10411b98db59ee/experiment/evaluate_model.py#L24">evaluate_model()</a>.
+  See the <a href="https://github.com/cavalab/srbench/blob/master/experiment/methods/AFPRegressor.py">experiment/methods/AFPRegressor.py</a> and/or other methods in that folder for examples.</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="returning-a-sympy-compatible-model-string">Returning a sympy compatible model string</h3>
+<p>In order to check for exact solutions to problems with known, ground-truth models, each SR method returns a model string that can be manipulated in <a href="https://www.sympy.org">sympy</a>. 
+Assure the returned model meets these requirements:</p>
+
+<ol>
+  <li>The variable names appearing in the model are identical to those in the training data.</li>
+  <li>The operators/functions in the model are available in <a href="https://docs.sympy.org/latest/modules/functions/index.html">sympy’s function set</a>. 
+If they are not, they need to be defined in the model’s script and referenced appropriately in the <code class="language-plaintext highlighter-rouge">model()</code> function, so that sympy can find them.</li>
+</ol>
+
+<p>We are still working out how to handle operators uniformly and appropriately, and currently rely on <a href="https://github.com/EpistasisLab/srbench/blob/master/experiment/symbolic_utils.py">experiment/symbolic_utils.py</a> to post-process models.<br />
+However, new additions to the repo should not require post-processing for compatibility.
+See issue #58 for more details.</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://github.com/jiangnanhugo/scibench/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+    
+
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 SciBench. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,49 @@
+# main links
+main:
+  - title: "SciBench"
+    url: / 
+    children:
+    - title: "Benchmarked Methods"
+      url: /#benchmarked-methods
+    - title: "References"
+      url: /#references
+    - title: "Contact"
+      url: /#contact
+  - title: "User Guide"
+    url: /user-guide
+    children:
+    - title: "Installation"
+      url: /user-guide/#installation
+    - title: "Reproducing the Experiment"
+      url: /user-guide/#reproducing-the-experiment
+  - title: "Contributing"
+    url: /contributing/
+  - title: "Results"
+    url: /results/
+  - title: "Datasets"
+    url: /datasets/
+  - title: "Competition 2022"
+    url: /competition-2022/
+    children:
+    - title: "Results"
+      url: /competition-2022/
+    - title: "Competition Guide"
+      url: /competition-guide/
+      
+competition:
+  - title: "Results"
+    url: /competition-2022/
+  - title: "Competition Guide"
+    url: /competition-guide/
+    children:
+    - title: "Instructions"
+      url: /competition-guide/#instructions
+    - title: "Regressor Guide"
+      url: /competition-guide/#regressor-guide
+    - title: "Competition Details"
+      url: /competition-guide/#competition-details
+    - title: "Judging Criteria"
+      url: /judging-criteria/
+ 
+
+

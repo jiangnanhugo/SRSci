@@ -1,0 +1,498 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>SciBench</title>
+<meta name="description" content="Scientist-in-the-loop benchmark for symbolic regression">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="SciBench">
+<meta property="og:title" content="SciBench">
+<meta property="og:url" content="http://localhost:4000/competition-2023/">
+
+
+  <meta property="og:description" content="Scientist-in-the-loop benchmark for symbolic regression">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/competition-2023/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<!-- [WGL] used https://gauger.io/fonticon/ -->
+<link rel="shortcut icon" href="/assets/images/favicon.ico">
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          SciBench
+          <span class="site-subtitle">Scientist-in-the-loop benchmark for symbolic regression</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/">SciBench</a>
+            </li><li class="masthead__menu-item">
+              <a href="/user-guide">User Guide</a>
+            </li><li class="masthead__menu-item">
+              <a href="/contributing/">Contributing</a>
+            </li><li class="masthead__menu-item">
+              <a href="/results/">Results</a>
+            </li><li class="masthead__menu-item">
+              <a href="/datasets/">Datasets</a>
+            </li><li class="masthead__menu-item">
+              <a href="/competition-2022/">Competition 2022</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name"></h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Maintained by <a href="https://github.com/jiangnanhugo">@jiangnanhugo</a> and many open-source contributors</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="https://github.com/jiangnanhugo/scibench/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub Repo</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+    
+      
+      
+      
+      
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  <h3 class="nav__title" style="padding-left: 0;">Competition 2023</h3>
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#symbolic-regression-gecco-competition---2023">Symbolic Regression GECCO Competition - 2023</a></li><li><a href="#call-for-participation">Call for participation</a></li><li><a href="#track-1---performance">Track 1 - Performance</a><ul><li><a href="#evaluation-criteria">Evaluation criteria</a></li></ul></li><li><a href="#track-2---interpretability">Track 2 - Interpretability</a><ul><li><a href="#evaluation-criteria-1">Evaluation criteria</a></li></ul></li><li><a href="#prize-money">Prize money</a></li><li><a href="#come-chat-with-us">Come chat with us!!</a></li><li><a href="#entries">Entries</a></li><li><a href="#organizers">Organizers</a></li><li><a href="#sponsors">Sponsors</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        
+<h1 id="symbolic-regression-gecco-competition---2023">Symbolic Regression GECCO Competition - 2023</h1>
+
+<p>tl;dr the second edition of the symbolic regression competition will allow the participants to experiment with their own pipeline to submit the best symbolic regression model. We will have two tracks: best accuracy-simplicity trade-off and best pre and post-analysis. Read below for more details and don’t forget to join our Discord server at <a href="https://discord.gg/Dahqh3Chwy">https://discord.gg/Dahqh3Chwy</a>.</p>
+
+<p>The participation link is now online! See <a href="#entries">Entries</a>.</p>
+
+<h1 id="call-for-participation">Call for participation</h1>
+
+<p>The 2023 edition of the Symbolic Regression (SR) competition will be composed of two tracks: performance track and interpretability track. 
+The participants will have the freedom to apply their own pipeline with the objective of returning symbolic models that best describe the data. 
+In the first track, the models will be evaluated according to accuracy and simplicity. 
+In the second track, participants are further asked to provide a post-analysis focused on the interpretation of their symbolic model.</p>
+
+<p>The competition will start 01-April-2023 and last 2 months. The participants will gain access to 3 synthetic data sets for the first track, and 1 real-world data set for the second track. The tracks run independently and participants can enroll in one or both of them.
+During the two months, the participants can apply an SR approach or pipeline of their choice, e.g., their own novel algorithm or an existing SR package, as well as pre- and post-processing methods (e.g., feature construction and model simplification, respectively) to find suitable symbolic models for the corresponding data sets.</p>
+
+<p>Enrollment will be done via GitHub Classroom, at a link to be announced soon. 
+This will result in a private repository that can be accessed only by the participating team and the organizers.<br />
+The repository contains detailed submission instructions, a default directory structure, and the data sets for the two tracks.</p>
+
+<h1 id="track-1---performance">Track 1 - Performance</h1>
+
+<p>The participants will be free to experiment with these data sets until the deadline. 
+Analysis on each dataset should include the production of a single best model for each dataset, and an extended abstract discussing the pipeline.</p>
+
+<p>At the competition submission deadline the repository of a participating team should contain:</p>
+
+<ul>
+  <li>[required] A file containing a single model as a <strong>sympy-compatible expression</strong>, selected as the best expression for that data set, named <code class="language-plaintext highlighter-rouge">dataset_X_best_model</code>.</li>
+  <li>[required] A maximum 4 page extended abstract in PDF format describing the algorithm and pipeline. This PDF must contain the name and contact information of the participants.</li>
+  <li>[to be eligible for prize] Reproducibility documentation in the <code class="language-plaintext highlighter-rouge">src</code> folder.
+    <ul>
+      <li>Installation and execution instructions</li>
+      <li>Scripts (Jupyter Notebook is accepted) with detailed instructions of all steps used to produce models (including hyperparameters search, if any)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="evaluation-criteria">Evaluation criteria</h2>
+
+<p>The final score of each competitor will be composed of:</p>
+
+<ul>
+  <li><em>acc</em>: Rank based on the accuracy (R^2) on a separate validation set for each data set.</li>
+  <li><em>simpl</em>: Rank based on the a simplicity (number of nodes calculating by traversing the sympy expression) of the model for each data set.</li>
+</ul>
+
+<p>The rank will be calculated for each data set independently such that, with N participants, the k-th ranked competitor (k=1 being the best) will be assigned a value of <em>N - k + 1</em>. The final score will be the harmonic mean of all of the scores and each participant will be ranked accordingly:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">score</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">n</span> <span class="o">/</span> <span class="nb">sum</span><span class="p">([</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">acc</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">simpl</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">(</span><span class="mf">1.</span><span class="p">.</span><span class="n">n</span><span class="p">)])</span>
+</code></pre></div></div>
+
+<h1 id="track-2---interpretability">Track 2 - Interpretability</h1>
+
+<p>The participants will be free to experiment with this data set until the deadline. 
+Analysis on each dataset should include the production of of one or more models and a detailed pre and post-analysis regarding the interpretation of that model.
+Together with the data set we will also provide the context (what the data is about, how it was extracted, etc.) and a description of each feature.
+The interpretability analysis in the extended abstract can contain any information that can be extracted from the symbolic expressions. 
+For example, you can try to analyze the behavior of the target value w.r.t. certain features, make a study of how some features interact, measure the uncertainty of the predictions or confidence intervals, and explain whether these results are reasonable given the nature of the data. 
+Extra points will be awarded for analysis that is unique to Symbolic Regression models.</p>
+
+<p>At the competition submission deadline the repository of a participating team should contain:</p>
+
+<ul>
+  <li>[required] The result files in the <code class="language-plaintext highlighter-rouge">result</code> folder. A file called <code class="language-plaintext highlighter-rouge">dataset_best_models</code> containing relevant models as a <strong>sympy-compatible expression</strong>, selected as the best expression for that data set.</li>
+  <li>[required] A 4 page extended abstract in PDF format describing the algorithm, pipeline, and the intepretability analysis of the real-world data set (<code class="language-plaintext highlighter-rouge">paper</code> folder). This PDF must contain the name and contact information of the participants.</li>
+  <li>[to be eligible for prize] Reproducibility documentation in the <code class="language-plaintext highlighter-rouge">src</code> folder.
+    <ul>
+      <li>Installation and execution instructions</li>
+      <li>Scripts (Jupyter Notebook is accepted) with detailed instructions of all steps used to produce models (including hyperparameters search, if any)</li>
+      <li>Code or instruction to compute any additonal analysis, if applicable.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="evaluation-criteria-1">Evaluation criteria</h2>
+
+<p>Each member of the jury will assign a score to each submission and the final score will be a simple average of the assigned scores. The jury will take into consideration:</p>
+
+<ul>
+  <li>Level of details in the pipeline</li>
+  <li>Readability of the model</li>
+  <li>Interestingness of the pre and post analysis process</li>
+  <li>Analysis of interpretation (with special points for analysis that can only be made using SR models)</li>
+</ul>
+
+<p>Notice that the scores are subjective and these criteria are only a guideline to the jury (e.g., participants who provide a large model with a very good interpretation may score more points than participants that provide a small model with a less good interpretation).</p>
+
+<h1 id="prize-money">Prize money</h1>
+
+<p>As to stimulate reproducibility, a prize money of US$ 750.00 will be granted to the best ranked open-sourced participant (those with a complete <code class="language-plaintext highlighter-rouge">src</code> folder) <strong>for each track</strong>.
+For both tracks, we will try to organize a special issue for the participants who are interested in publishing their methods and results.</p>
+
+<p><strong>Important:</strong> the participants must ensure that the evaluation (prediction) of the models obtained from their pipeline is the same as those of the respective sympy-compatible expressions.</p>
+
+<p><strong>Important (2):</strong> all of the repositories will be made public after the competition ends.</p>
+
+<h1 id="come-chat-with-us">Come chat with us!!</h1>
+
+<p>If you want to ask any question, provide some feedback or simply chit-chat, join us at the Discord server: <a href="https://discord.gg/Dahqh3Chwy">https://discord.gg/Dahqh3Chwy</a></p>
+
+<h1 id="entries">Entries</h1>
+
+<p>To participate of the competition, each member of the team must click on the links corresponding to the desired track. The first member to enroll will create a team name and the other members will choose their team from the list of choices. After enrolling, Github Classroom will set up a private github repository to be used by each team. Read the instructions inside the repository carefully and that’s it, you are good to go!</p>
+
+<p>Track 1: <a href="https://classroom.github.com/a/2QvkhUcx">https://classroom.github.com/a/2QvkhUcx</a></p>
+
+<p>Track 2: <a href="https://classroom.github.com/a/B9mQ5SlP">https://classroom.github.com/a/B9mQ5SlP</a></p>
+
+<h1 id="organizers">Organizers</h1>
+
+<p>Fabricio Olivetti de França - Federal University of ABC - folivetti (at) ufabc.edu.br</p>
+
+<p>Fabricio Olivetti de França is an associated professor in the Center for Mathematics, Computing and Cognition (CMCC) at Federal University of ABC. He received his PhD in Computer and Electrical Engineering from State University of Campinas. His current research topics are Symbolic Regression, Evolutionary Computation and Functional Data Structures.</p>
+
+<p>Marco Virgolin - Centrum Wiskunde &amp; Informatica - marco.virgolin (at) cwi.nl</p>
+
+<p>Marco Virgolin is a researcher (tenure track) at Centrum Wiskunde &amp; Informatica (CWI), the Dutch national center of mathematics and computer science. He received his PhD from Delft University of Technology. Marco works on explainable AI, most notably by means of evolutionary machine learning methods such as genetic programming. He is also interested in medical applications of machine learning and human-machine interaction.</p>
+
+<p>Pierre-Alexandre Kamienny - Meta AI &amp; Sorbonne University</p>
+
+<p>Pierre-Alexandre is a third-year PhD student at Meta AI Paris and Sorbonne University. He worked on fast adaptation in deep reinforcement learning and has been focused for more than a year on developing neural methods for symbolic regression that exhibits properties such as leveraging past experience as well as fast inference.</p>
+
+<p>Geoffrey Bomarito - NASA Langley Research Center - geoffrey.f.bomarito (at) nasa.gov</p>
+
+<p>Geoffrey is a research engineer at NASA Langley Research Center in the USA. His research centers on uncertainty quantification in machine learning with a goal of building trust in data-driven models. Specifically, his recent work focuses on genetic programming based symbolic regression, physics-informed generative adversarial networks, and multifidelity uncertainty quantification.</p>
+
+<h1 id="sponsors">Sponsors</h1>
+
+<p><a href="http://www.chip.org"><img style="float:center;" src="../assets/images/chip-logo_0.png" /></a>
+<a href="http://www.chip.org"><img style="float:center; height:60px;" src="../assets/images/bch-hvd.png" /></a>
+<br />
+<a href="https://heal.heuristiclab.com"><img style="float:center;height:60px;" src="../assets/images/20211004_HEAL-Logo_v7.png" /></a>
+<a href="https://heal.heuristiclab.com"><img style="float:center;height:60px;" src="../assets/images/uasau.png" /></a></p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://github.com/jiangnanhugo/scibench/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+    
+
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 SciBench. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,556 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Results - SciBench</title>
+<meta name="description" content="Scientist-in-the-loop benchmark for symbolic regression">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="SciBench">
+<meta property="og:title" content="Results">
+<meta property="og:url" content="http://localhost:4000/results/">
+
+
+  <meta property="og:description" content="Scientist-in-the-loop benchmark for symbolic regression">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/results/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<!-- [WGL] used https://gauger.io/fonticon/ -->
+<link rel="shortcut icon" href="/assets/images/favicon.ico">
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          SciBench
+          <span class="site-subtitle">Scientist-in-the-loop benchmark for symbolic regression</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/">SciBench</a>
+            </li><li class="masthead__menu-item">
+              <a href="/user-guide">User Guide</a>
+            </li><li class="masthead__menu-item">
+              <a href="/contributing/">Contributing</a>
+            </li><li class="masthead__menu-item">
+              <a href="/results/">Results</a>
+            </li><li class="masthead__menu-item">
+              <a href="/datasets/">Datasets</a>
+            </li><li class="masthead__menu-item">
+              <a href="/competition-2022/">Competition 2022</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name"></h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Maintained by <a href="https://github.com/jiangnanhugo">@jiangnanhugo</a> and many open-source contributors</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="https://github.com/jiangnanhugo/scibench/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub Repo</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <a href="/"><span class="nav__sub-title">SciBench</span></a>
+        
+
+        
+        <ul>
+          
+            <li><a href="/#benchmarked-methods">Benchmarked Methods</a></li>
+          
+            <li><a href="/#references">References</a></li>
+          
+            <li><a href="/#contact">Contact</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <a href="/user-guide"><span class="nav__sub-title">User Guide</span></a>
+        
+
+        
+        <ul>
+          
+            <li><a href="/user-guide/#installation">Installation</a></li>
+          
+            <li><a href="/user-guide/#reproducing-the-experiment">Reproducing the Experiment</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <a href="/contributing/"><span class="nav__sub-title">Contributing</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          <a href="/results/"><span class="nav__sub-title">Results</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          <a href="/datasets/"><span class="nav__sub-title">Datasets</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          <a href="/competition-2022/"><span class="nav__sub-title">Competition 2022</span></a>
+        
+
+        
+        <ul>
+          
+            <li><a href="/competition-2022/">Results</a></li>
+          
+            <li><a href="/competition-guide/">Competition Guide</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Results">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Results
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#results-for-black-box-regression">Results for Black-box Regression</a><ul><li><a href="#r2-score-of-the-test-set">R2 score of the test set</a></li><li><a href="#size-of-the-models">Size of the models</a></li><li><a href="#training-time-in-seconds">Training time in seconds</a></li><li><a href="#accuracy-complexity-time-trade-offs">Accuracy-Complexity-Time Trade-offs</a></li></ul></li><li><a href="#results-for-ground-truth-problems">Results for Ground-truth Problems</a><ul><li><a href="#symbolically-verfied-solutions">Symbolically-verfied Solutions</a></li><li><a href="#accuracy-solutions">Accuracy Solutions</a></li></ul></li></ul>
+
+            </nav>
+          </aside>
+        
+        <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+
+<!-- <script src="vega-embed-6.15.0.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+<script type="text/javascript">
+    var view;
+
+    fetch('../assets/plots/r2test.json')
+      .then(res => res.json())
+      .then(spec => render(spec, "#r2test"))
+      .catch(err => console.error(err));
+    fetch('../assets/plots/size.json')
+      .then(res => res.json())
+      .then(spec => render(spec, "#size"))
+      .catch(err => console.error(err));
+    fetch('../assets/plots/time.json')
+      .then(res => res.json())
+      .then(spec => render(spec, "#time"))
+      .catch(err => console.error(err));
+  vegaEmbed('#paretoR2Size', "../assets/plots/paretoR2Size.json").then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  vegaEmbed('#paretoR2Time', "../assets/plots/paretoR2Time.json").then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  vegaEmbed('#paretoTimeSize', ".../assets/plots/paretoTimeSize.json").then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+
+    function render(spec, cont) {
+      view = new vega.View(vega.parse(spec), {
+        renderer:  'canvas',  // renderer (canvas or svg)
+        container: cont,   // parent DOM container
+        hover:     true       // enable hover processing
+      });
+      return view.runAsync();
+    }
+  </script>
+
+<p>Results are summarized over datasets.</p>
+
+<h2 id="results-for-black-box-regression">Results for Black-box Regression</h2>
+
+<p>Select whether to analyze the results for every data set, Non-Friedman datasets, or Friedman datasets. You can also choose the aggregation function and the error measure.</p>
+
+<h3 id="r2-score-of-the-test-set">R2 score of the test set</h3>
+
+<div id="r2test"></div>
+
+<p><br /><br /></p>
+
+<h3 id="size-of-the-models">Size of the models</h3>
+
+<div id="size"></div>
+
+<p><br /><br /></p>
+
+<h3 id="training-time-in-seconds">Training time in seconds</h3>
+
+<div id="time"></div>
+
+<p><br /><br /></p>
+
+<h3 id="accuracy-complexity-time-trade-offs">Accuracy-Complexity-Time Trade-offs</h3>
+
+<p>Considering the accuracy and simplicity of models simultaneously, this figure illustrates the trade-offs made by each method. 
+Methods lower and to the left produce models with better trade-offs between accuracy and simplicity.</p>
+
+<div id="paretoR2Size"></div>
+
+<p><br /><br /></p>
+
+<div id="paretoR2Time"></div>
+
+<p><br /><br /></p>
+
+<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+
+<!-- <script src="vega-embed-6.15.0.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+<script type="text/javascript">
+    var view;
+
+    fetch('../assets/plots/srGT.json')
+      .then(res => res.json())
+      .then(spec => render(spec, "#srGT"))
+      .catch(err => console.error(err));
+    fetch('../assets/plots/accGT.json')
+      .then(res => res.json())
+      .then(spec => render(spec, "#accGT"))
+      .catch(err => console.error(err));
+
+    function render(spec, cont) {
+      view = new vega.View(vega.parse(spec), {
+        renderer:  'canvas',  // renderer (canvas or svg)
+        container: cont,   // parent DOM container
+        hover:     true       // enable hover processing
+      });
+      return view.runAsync();
+    }
+  </script>
+
+<h2 id="results-for-ground-truth-problems">Results for Ground-truth Problems</h2>
+
+<h3 id="symbolically-verfied-solutions">Symbolically-verfied Solutions</h3>
+
+<p>How often a method finds a model symbolically equivalent to the ground-truth process</p>
+
+<div id="srGT"></div>
+
+<h3 id="accuracy-solutions">Accuracy Solutions</h3>
+
+<p>How often a method finds a model with test set R^2&gt;0.999</p>
+
+<div id="accGT"></div>
+
+<p><br /><br /></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://github.com/jiangnanhugo/scibench/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+    
+
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 SciBench. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

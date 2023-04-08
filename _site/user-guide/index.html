@@ -1,0 +1,549 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>SciBench</title>
+<meta name="description" content="Scientist-in-the-loop benchmark for symbolic regression">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="SciBench">
+<meta property="og:title" content="SciBench">
+<meta property="og:url" content="http://localhost:4000/user-guide/">
+
+
+  <meta property="og:description" content="Scientist-in-the-loop benchmark for symbolic regression">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/user-guide/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<!-- [WGL] used https://gauger.io/fonticon/ -->
+<link rel="shortcut icon" href="/assets/images/favicon.ico">
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          SciBench
+          <span class="site-subtitle">Scientist-in-the-loop benchmark for symbolic regression</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/">SciBench</a>
+            </li><li class="masthead__menu-item">
+              <a href="/user-guide">User Guide</a>
+            </li><li class="masthead__menu-item">
+              <a href="/contributing/">Contributing</a>
+            </li><li class="masthead__menu-item">
+              <a href="/results/">Results</a>
+            </li><li class="masthead__menu-item">
+              <a href="/datasets/">Datasets</a>
+            </li><li class="masthead__menu-item">
+              <a href="/competition-2022/">Competition 2022</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name"></h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Maintained by <a href="https://github.com/jiangnanhugo">@jiangnanhugo</a> and many open-source contributors</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="https://github.com/jiangnanhugo/scibench/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub Repo</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <a href="/"><span class="nav__sub-title">SciBench</span></a>
+        
+
+        
+        <ul>
+          
+            <li><a href="/#benchmarked-methods">Benchmarked Methods</a></li>
+          
+            <li><a href="/#references">References</a></li>
+          
+            <li><a href="/#contact">Contact</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <a href="/user-guide"><span class="nav__sub-title">User Guide</span></a>
+        
+
+        
+        <ul>
+          
+            <li><a href="/user-guide/#installation">Installation</a></li>
+          
+            <li><a href="/user-guide/#reproducing-the-experiment">Reproducing the Experiment</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <a href="/contributing/"><span class="nav__sub-title">Contributing</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          <a href="/results/"><span class="nav__sub-title">Results</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          <a href="/datasets/"><span class="nav__sub-title">Datasets</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          <a href="/competition-2022/"><span class="nav__sub-title">Competition 2022</span></a>
+        
+
+        
+        <ul>
+          
+            <li><a href="/competition-2022/">Results</a></li>
+          
+            <li><a href="/competition-guide/">Competition Guide</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#user-guide">User Guide</a><ul><li><a href="#installation">Installation</a></li><li><a href="#reproducing-the-benchmark-results">Reproducing the benchmark results</a><ul><li><a href="#black-box-experiment">Black-box experiment</a></li><li><a href="#ground-truth-experiment">Ground-truth experiment</a></li><li><a href="#post-processing">Post-processing</a></li></ul></li><li><a href="#using-your-own-datasets">Using your own datasets</a></li></ul></li></ul>
+
+            </nav>
+          </aside>
+        
+        
+<h1 id="user-guide">User Guide</h1>
+
+<h2 id="installation">Installation</h2>
+
+<p>We have provided a <a href="environment.yml">conda environment</a>, <a href="configure.sh">configuration script</a> and <a href="install.sh">installation script</a> that should make installation straightforward.
+We’ve currently tested this on Ubuntu and CentOS. 
+Steps:</p>
+
+<ol>
+  <li>Install the conda environment:</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda <span class="nb">env </span>create <span class="nt">-f</span> environment.yml
+conda activate scibench
+</code></pre></div></div>
+
+<ol>
+  <li>Install the benchmark methods:</li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bash install.sh
+</code></pre></div></div>
+
+<h2 id="reproducing-the-benchmark-results">Reproducing the benchmark results</h2>
+
+<p>Experiments are launched from the <code class="language-plaintext highlighter-rouge">experiments/</code> folder via the script <code class="language-plaintext highlighter-rouge">analyze.py</code>.
+The script can be configured to run the experiment in parallel locally, on an LSF job scheduler, or on a SLURM job scheduler. 
+To see the full set of options, run <code class="language-plaintext highlighter-rouge">python analyze.py -h</code>.</p>
+
+<p><strong>WARNING</strong>: running some of the commands below will submit tens of thousands of experiments. 
+Use accordingly.</p>
+
+<h3 id="black-box-experiment">Black-box experiment</h3>
+<p>After installing and configuring the conda environment, the complete black-box experiment can be started via the command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python analyze.py /path/to/pmlb/datasets <span class="nt">-n_trials</span> 10 <span class="nt">-results</span> ../results_blackbox <span class="nt">-time_limit</span> 48:00
+</code></pre></div></div>
+
+<h3 id="ground-truth-experiment">Ground-truth experiment</h3>
+
+<p><strong>Train the models</strong>: we train the models subject to varying levels of noise using the options below.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># submit the ground-truth dataset experiment. </span>
+
+<span class="k">for </span>data <span class="k">in</span> <span class="s2">"/path/to/pmlb/datasets/strogatz_"</span> <span class="s2">"/path/to/pmlb/datasets/feynman_"</span> <span class="p">;</span> <span class="k">do</span> <span class="c"># feynman and strogatz datasets</span>
+    <span class="k">for </span>TN <span class="k">in </span>0 0.001 0.01 0.1<span class="p">;</span> <span class="k">do</span> <span class="c"># noise levels</span>
+        python analyze.py <span class="se">\</span>
+            <span class="nv">$data</span><span class="s2">"*"</span> <span class="se">\ </span><span class="c">#data folder</span>
+            <span class="nt">-results</span> ../results_sym_data <span class="se">\ </span><span class="c"># where the results will be saved</span>
+            <span class="nt">-target_noise</span> <span class="nv">$TN</span> <span class="se">\ </span><span class="c"># level of noise to add</span>
+            <span class="nt">-sym_data</span> <span class="se">\ </span><span class="c"># for datasets with symbolic models</span>
+            <span class="nt">-n_trials</span> 10 <span class="se">\</span>
+            <span class="nt">-m</span> 16384 <span class="se">\ </span><span class="c"># memory limit in MB</span>
+            <span class="nt">-time_limit</span> 9:00 <span class="se">\ </span><span class="c"># time limit in hrs</span>
+            <span class="nt">-job_limit</span> 100000 <span class="se">\ </span><span class="c"># this will restrict how many jobs actually get submitted.</span>
+            <span class="nt">-tuned</span> <span class="c"># use the tuned version of the estimators, rather than performing hyperparameter tuning.</span>
+        <span class="k">if</span> <span class="o">[</span> <span class="nv">$?</span> <span class="nt">-gt</span> 0 <span class="o">]</span> <span class="p">;</span> <span class="k">then
+            </span><span class="nb">break
+        </span><span class="k">fi
+    done
+done</span>
+</code></pre></div></div>
+
+<p><strong>Symbolic Assessment</strong>: Following model training, the trained models are assessed for symbolic equivalence with the ground-truth data-generating processes. 
+This is handled in <a href="experiment/assess_symbolic_model.py">assess_symbolic_model.py</a>. 
+Use <code class="language-plaintext highlighter-rouge">analyze.py</code> to generate batch calls to this function as follows:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># assess the ground-truth models that were produced using sympy</span>
+<span class="k">for </span>data <span class="k">in</span> <span class="s2">"/path/to/pmlb/datasets/strogatz_"</span> <span class="s2">"/path/to/pmlb/datasets/feynman_"</span> <span class="p">;</span> <span class="k">do</span> <span class="c"># feynman and strogatz datasets</span>
+    <span class="k">for </span>TN <span class="k">in </span>0 0.001 0.01 0.1<span class="p">;</span> <span class="k">do</span> <span class="c"># noise levels</span>
+        python analyze.py <span class="se">\</span>
+            <span class="nt">-script</span> assess_symbolic_model <span class="se">\</span>
+            <span class="nv">$data</span><span class="s2">"*"</span> <span class="se">\ </span><span class="c">#data folder</span>
+            <span class="nt">-results</span> ../results_sym_data <span class="se">\ </span><span class="c"># where the results will be saved</span>
+            <span class="nt">-target_noise</span> <span class="nv">$TN</span> <span class="se">\ </span><span class="c"># level of noise to add</span>
+            <span class="nt">-sym_data</span> <span class="se">\ </span><span class="c"># for datasets with symbolic models</span>
+            <span class="nt">-n_trials</span> 10 <span class="se">\</span>
+            <span class="nt">-m</span> 8192 <span class="se">\ </span><span class="c"># memory limit in MB</span>
+            <span class="nt">-time_limit</span> 1:00 <span class="se">\ </span><span class="c"># time limit in hrs</span>
+            <span class="nt">-job_limit</span> 100000 <span class="se">\ </span><span class="c"># this will restrict how many jobs actually get submitted.</span>
+            <span class="nt">-tuned</span> <span class="c"># use the tuned version of the estimators, rather than performing hyperparameter tuning.</span>
+        <span class="k">if</span> <span class="o">[</span> <span class="nv">$?</span> <span class="nt">-gt</span> 0 <span class="o">]</span> <span class="p">;</span> <span class="k">then
+            </span><span class="nb">break
+        </span><span class="k">fi
+    done
+done</span>
+</code></pre></div></div>
+
+<p><strong>Output</strong>: next to each <code class="language-plaintext highlighter-rouge">.json</code> file, an additional file named <code class="language-plaintext highlighter-rouge">.json.updated</code> is saved with the symbolic assessment included.</p>
+
+<h3 id="post-processing">Post-processing</h3>
+
+<p>Navigate to the <a href="postprocessing">postprocessing</a> folder to begin postprocessing the experiment results. 
+The following two scripts collate the <code class="language-plaintext highlighter-rouge">.json</code> files into two <code class="language-plaintext highlighter-rouge">.feather</code> files to share results more easily. 
+You will notice these <code class="language-plaintext highlighter-rouge">.feather</code> files are loaded to generate figures in the notebooks. 
+They also perform some cleanup like shortening algorithm names, etc.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python collate_blackbox_results.py
+python collate_groundtruth_results.py
+</code></pre></div></div>
+
+<p><strong>Visualization</strong></p>
+
+<ul>
+  <li><a href="postprocessing/groundtruth_results.ipynb">groundtruth_results.ipynb</a>: ground-truth results comparisons</li>
+  <li><a href="postprocessing/blackbox_results.ipynb">blackbox_results.ipynb</a>: ground-truth results comparisons</li>
+  <li><a href="postprocessing/statistical_comparisons.ipynb">statistical_comparisons.ipynb</a>: post-hoc statistical comparisons</li>
+  <li><a href="postprocessing/pmlb_plots.ipynb">pmlb_plots</a>: the <a href="https://github.com/EpistasisLab/pmlb">PMLB</a> datasets visualization</li>
+</ul>
+
+<h2 id="using-your-own-datasets">Using your own datasets</h2>
+
+<p>To use your own datasets, you want to check out / modify read_file in read_file.py: https://github.com/cavalab/srbench/blob/4cc90adc9c450dad3cb3f82c93136bc2cb3b1a0a/experiment/read_file.py</p>
+
+<p>If your datasets follow the convention of https://github.com/EpistasisLab/pmlb/tree/master/datasets, i.e. they are in a pandas DataFrame with the target column labelled “targert”, you can call <code class="language-plaintext highlighter-rouge">read_file</code> directly just passing the filename like you would with any of the PMLB datasets. 
+The file should be stored and compressed as a <code class="language-plaintext highlighter-rouge">.tsv.gz</code> file.</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://github.com/jiangnanhugo/scibench/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+    
+
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 SciBench. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
