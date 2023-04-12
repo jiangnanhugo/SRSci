@@ -1,6 +1,8 @@
 ---
 title: Results
 permalink: /results/
+classes: wide
+toc: false
 ---
 
 <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
