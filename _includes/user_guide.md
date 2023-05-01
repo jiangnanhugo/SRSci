@@ -30,14 +30,22 @@ After installing and configuring the conda environment, your learning algorithm 
 python gp.py \
 -noise_type uniform \ # noise type
 -noise_rate 0.01 \ # noise rate
--results ../path_to_result_file.csv \ # save your Top-10 best predicted expressions into this file
+-results ../path_to_result_file.txt \ # save your Top-10 best predicted expressions into this file
 -time_limit 3600  \ # the total running time of the whole program.
 ```
 
 ### Output
-In the output file `path_to_result_file.csv`, you will see 10 lines of symbolic regressions, that are identified as the most possible equations by the GP learning algorithms.
+In the output file `path_to_result_file.txt`, you will see 10 lines of symbolic regressions, that are identified as the most possible equations by the GP learning algorithms.
 
-
+```txt
+name_of_equation: xxxxxx.encrypt
+name_of_your_algrithm: xxxxxxx
+best_predicted_equations:
+x1+x2
+x1+x3
+x1*x2
+x1*x3
+```
 
 
 
@@ -56,7 +64,7 @@ python evaluate.py \
 ```
 
 ### Output
-next to each `path_to_result_file.csv` file, an additional file named `path_to_result_file.json` is saved with the symbolic assessment included. 
+next to each `path_to_result_file.txt` file, an additional file named `path_to_result_file.json` is saved with the symbolic assessment included. 
 
 ## 4. Submission
 
