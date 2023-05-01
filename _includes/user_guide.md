@@ -1,6 +1,6 @@
 # User Guide
 
-## Installation
+## 1. Installation
 
 We have provided a [conda environment](environment.yml), [configuration script](configure.sh) and [installation script](install.sh) that should make installation straightforward.
 We've currently tested this on Ubuntu and CentOS. 
@@ -21,7 +21,7 @@ python setup.py install
 ```
 
 
-## Reproducing the given example algorithm results
+## 2. Reproducing the given example algorithm results
 Here we show the main process on running the learning algorithm, evaluting the quality of the learned equations and submit the learning algorithm to the server for public and private leadboards.
 
 After installing and configuring the conda environment, your learning algorithm should accept the following input arguments for a complete black-box experiment:
@@ -41,7 +41,7 @@ In the output file `path_to_result_file.csv`, you will see 10 lines of symbolic 
 
 
 
-## Evaluation
+## 3. Evaluation
 
 After model training, the trained models are assessed for symbolic equivalence with the ground-truth data-generating processes. 
 This is handled in [evaluate.py](evaluate.py). 
@@ -56,8 +56,23 @@ python evaluate.py \
 ```
 
 ### Output
-****: next to each `path_to_result_file.csv` file, an additional file named `path_to_result_file.json` is saved with the symbolic assessment included. 
+next to each `path_to_result_file.csv` file, an additional file named `path_to_result_file.json` is saved with the symbolic assessment included. 
 
-### Submission
+## 4. Submission
+
+For the convenience of evaluting each of the algorithms, we need to enforce the following requirements about the directory so that we can sucessfully run your algorthm. 
+
+1. you need to compress your code impelemntion into a **zip** file.
+
+2. Specify the extra packages and exact versions in **requirements.txt**, which are required to be installed before running your algorithms.
+
+2. In side your zip folder, the directory should contains **main.py** function, which is the default file to call your proposed algorithm.
+
+```bash
+YOUR_ALGOITHM/
+    main.py
+    requirements.txt
+    extra_files....
+```
 
 
