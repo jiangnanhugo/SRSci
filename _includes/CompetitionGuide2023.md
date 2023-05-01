@@ -13,7 +13,7 @@ The models will be evaluated according to accuracy and simplicity.
 The competition will start 01-May-2023 and last 3 months. The participants will gain access to 10 synthetic symbolic equations.
 During the three months, the participants can apply an SR approach or pipeline of their choice, e.g., their own novel algorithm or an existing SR package, as well as pre- and post-processing methods (e.g., feature construction and model simplification, respectively) to find suitable symbolic models for the corresponding data sets. 
 
-Enrollment will be done via GitHub Classroom, at a link to be announced soon. 
+Enrollment will be done via Easychair.org, at a link to be announced soon. 
 This will result in a private repository that can be accessed only by the participating team and the organizers.  
 The repository contains detailed submission instructions, a default directory structure, and the data sets for the two tracks.
 
