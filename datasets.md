@@ -1,6 +1,6 @@
 ---
 title: Datasets
-permalink: /datasets/
+permalink: /encrypted_equations/
 toc: false
 ---
 

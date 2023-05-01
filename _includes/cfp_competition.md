@@ -7,7 +7,7 @@ img {
 
 {% include toc %}
 
-# SRBench Competition 2022: Interpretable Symbolic Regression for Data Science
+# SRBench Competition 2023: Interpretable Symbolic Regression for Data Science
 
 
 SRBench hosted its first competition at the [GECCO 2022](https://gecco-2022.sigevo.org/) conference in Boston, MA. 

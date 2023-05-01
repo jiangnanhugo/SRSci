@@ -33,7 +33,7 @@ Use accordingly.
 After installing and configuring the conda environment, the complete black-box experiment can be started via the command:
 
 ```bash
-python analyze.py /path/to/pmlb/datasets -n_trials 10 -results ../results_blackbox -time_limit 48:00
+python analyze.py /path/to/pmlb/encrypted_equations -n_trials 10 -results ../results_blackbox -time_limit 48:00
 ```
 
 ### Ground-truth experiment
@@ -43,13 +43,13 @@ python analyze.py /path/to/pmlb/datasets -n_trials 10 -results ../results_blackb
 ```bash
 # submit the ground-truth dataset experiment. 
 
-for data in "/path/to/pmlb/datasets/strogatz_" "/path/to/pmlb/datasets/feynman_" ; do # feynman and strogatz datasets
+for data in "/path/to/pmlb/datasets/strogatz_" "/path/to/pmlb/datasets/feynman_" ; do # scibench and strogatz encrypted_equations
     for TN in 0 0.001 0.01 0.1; do # noise levels
         python analyze.py \
             $data"*" \ #data folder
             -results ../results_sym_data \ # where the results will be saved
             -target_noise $TN \ # level of noise to add
-            -sym_data \ # for datasets with symbolic models
+            -sym_data \ # for encrypted_equations with symbolic models
             -n_trials 10 \
             -m 16384 \ # memory limit in MB
             -time_limit 9:00 \ # time limit in hrs
@@ -68,14 +68,14 @@ Use `analyze.py` to generate batch calls to this function as follows:
 
 ```bash
 # assess the ground-truth models that were produced using sympy
-for data in "/path/to/pmlb/datasets/strogatz_" "/path/to/pmlb/datasets/feynman_" ; do # feynman and strogatz datasets
+for data in "/path/to/pmlb/datasets/strogatz_" "/path/to/pmlb/datasets/feynman_" ; do # scibench and strogatz encrypted_equations
     for TN in 0 0.001 0.01 0.1; do # noise levels
         python analyze.py \
             -script assess_symbolic_model \
             $data"*" \ #data folder
             -results ../results_sym_data \ # where the results will be saved
             -target_noise $TN \ # level of noise to add
-            -sym_data \ # for datasets with symbolic models
+            -sym_data \ # for encrypted_equations with symbolic models
             -n_trials 10 \
             -m 8192 \ # memory limit in MB
             -time_limit 1:00 \ # time limit in hrs
