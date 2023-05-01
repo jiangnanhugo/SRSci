@@ -101,13 +101,12 @@ They also perform some cleanup like shortening algorithm names, etc.
 python collate_blackbox_results.py
 python collate_groundtruth_results.py
 ```
-
+<!-- 
 **Visualization**
 
 - [groundtruth_results.ipynb](postprocessing/groundtruth_results.ipynb): ground-truth results comparisons
 - [blackbox_results.ipynb](postprocessing/blackbox_results.ipynb): ground-truth results comparisons
-- [statistical_comparisons.ipynb](postprocessing/statistical_comparisons.ipynb): post-hoc statistical comparisons
-- [pmlb_plots](postprocessing/pmlb_plots.ipynb): the [PMLB](https://github.com/EpistasisLab/pmlb) datasets visualization 
+- [statistical_comparisons.ipynb](postprocessing/statistical_comparisons.ipynb): post-hoc statistical comparisons -->
 
 
 ## Using your own datasets

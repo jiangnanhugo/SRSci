@@ -80,18 +80,18 @@ Methods Staged for Benchmarking:
 - PSTree (Zhang 2021)
     [code](https://github.com/hengzhe-zhang/PS-Tree)
     
-# Contribute
+<!-- # Contribute
 
 We are actively updating and expanding this benchmark. 
 Want to add your method? 
-See our [Contribution Guide.](https://cavalab.org/srbench/contributing/)
+See our [Contribution Guide.](https://cavalab.org/srbench/contributing/) -->
 
-# References
+<!-- # References -->
 
 
 
 
 # Contact
-
+Yexiang Xue ([@xlnxyx](https://github.com/xlnxyx)), yexiang at purdue dot edu
 Nan Jiang ([@jiangnanhugo](https://github.com/jiangnanhugo)), jiang631 at purdue dot edu
 

@@ -35,60 +35,28 @@ In the synthetic track, methods were compared according to five properties: 1) r
 
 |    | Algorithm     |   Overall Score |
 |---:|:--------------|--------------:|
-|  **1** | **QLattice**      |          6.23 |
-|  2 | pysr          |          5.26 |
-|  3 | uDSR          |          4.67 |
-|  4 | operon        |          4.38 |
-|  5 | Bingo         |          4.32 |
-|  6 | E2ET          |          2.74 |
-|  7 | geneticengine |          2.54 |
-|  8 | eql           |          1.33 |
-|  9 | PS-Tree       |          0.85 |
-
-## Real-world Track Rankings
-
-In the real-world track, competitor methods were trained to build interpretable predictive models for 14-day forecast counts of COVID-19 cases, hospitalizations, and deaths in New York State. 
-These models were reviewed by a subject expert and assigned ``trust ratings", in addition to being evaluted for accuracy and simplicity. 
+|  1 | GP-Meld         |          xx |
+|  2 | PQT          |          xx |
+|  3 | DSR |          xx |
+|  4 | GP           |          xx |
 
 
-|    | Algorithm     |   Overall Score |
-|---:|:--------------|--------------:|
-|  **1** | **uDSR**          |          5.75 |
-|  2 | QLattice      |          5.21 |
-|  3 | geneticengine |          4.99 |
-|  4 | operon        |          4.8  |
-|  5 | Bingo         |          4.66 |
-|  6 | pysr          |          4.17 |
-|  7 | PS-Tree       |          3.15 |
-|  8 | E2ET          |          2.72 |
 
 
-Congratulations to the winners. 
-Please stay tuned for additional updates, as we aim to make these results reproducible by providing all source code. 
-The current raw results files can be found at the link below. 
-
-
-<a href="https://doi.org/10.5281/zenodo.6842176"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.6842176.svg" alt="DOI" style="height:20px;" ></a>
 
 ## Organizers
 
-Please address questions to william dot lacava at childrens dot harvard dot edu. 
+Please address questions to jiang631 at purdue dot edu. 
 
-- Michael Kommenda
+- Yexiang Xue
     - University of Applied Sciences Upper Austria
-- William La Cava
+- Nan Jiang
     - Boston Children’s Hospital and Harvard Medical School
-- Maimuna Majumder
-    - Boston Children’s Hospital and Harvard Medical School
-- Fabricio Olivetti de França
-    - Federal University of ABC
-- Marco Virgolin
-    - Centrum Wiskunde & Informatica
 
-# Sponsors
+<!-- # Sponsors
 
 <a href="http://www.chip.org" ><img style="float:center;" src="../assets/images/chip-logo_0.png"></a>
 <a href="http://www.chip.org" ><img style="float:center; height:60px;" src="../assets/images/bch-hvd.png"></a>
 <br>
 <a href="https://heal.heuristiclab.com" ><img style="float:center;" src="../assets/images/20211004_HEAL-Logo_v7.png"></a>
-<a href="https://heal.heuristiclab.com" ><img style="float:center;height:60px;" src="../assets/images/uasau.png"></a>
+<a href="https://heal.heuristiclab.com" ><img style="float:center;height:60px;" src="../assets/images/uasau.png"></a> -->

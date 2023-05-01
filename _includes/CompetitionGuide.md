@@ -160,7 +160,7 @@ All datasets will be less than 10,000 rows and fewer than 100 features.
 The time limits are as follows:
 
 - For datasets up to 1000 rows, 60 minutes (1 hour)
-- For datasets up to 10000 rows, 600 minutes (10 hours)
+- For datasets up to 10000 rows, 240 minutes (4 hours)
 
 If a call to `est.fit()` takes longer than the allotted time, `est.fit()` will receive a `SIGALRM` and the evaluation routine will raise a `TimeOutException`. 
 Shortly thereafter (on the order of seconds), the job will be killed. 

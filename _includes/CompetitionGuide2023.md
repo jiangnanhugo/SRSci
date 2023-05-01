@@ -41,14 +41,13 @@ We have two leadboards: public and privaite.
 
 The final score of each competitor will be composed of:
 
-- *A*: Rank based on the accuracy (R^2) on a separate validation set for each data set.
-- *S*: Rank based on the a simplicity (number of nodes calculating by traversing the sympy expression) of the model for each data set.
+- *acc*: Rank based on the accuracy (R^2) on a separate validation set for each data set.
+- *simpl*: Rank based on the a simplicity (number of nodes calculating by traversing the sympy expression) of the model for each data set.
 
 The rank will be calculated for each data set independently such that, with N participants, the k-th ranked competitor (k=1 being the best) will be assigned a value of *N - k + 1*. The final score will be the harmonic mean of all of the scores and each participant will be ranked accordingly:
 
-
 $$
-score = \frac{2*n}{ \sum_{i=1}^n 1/A_i + 1/S_i}
+score = \frac{2*n}{ \sum_{i=1}^n (1/acc[i]) + (1/simpl[i]) for i in (1..n)]}
 $$
 
 # Come chat with us!!
@@ -64,17 +63,21 @@ Track 1: [https://easychair.org/cfp/content.cgi?a=30862459;draft=1](https://easy
 
 # Organizers
 
+<a href="https://www.cs.purdue.edu/homes/yexiang/" ><img style="float:center;height:60px;" src="https://www.cs.purdue.edu/homes/yexiang/images/emily2019/YexiangXue.jpg"></a>
+
 Yexiang Xue - Purdue University, USA - yexiang (at) purdue.edu
 
 Yexiang is an associated professor in the Department of Computer Science at Purdue University, USA. His research focuses on developing intelligent systems that tightly integrate decision making with machine learning and probabilistic reasoning under uncertainty. He has made core contributions across multiple scientific domains, ranging from artificial intelligence, machine learning, renewable energy, materials science, crowdsourcing, citizen science, urban computing, ecology, to behavioral econometrics. In his research, he focuses on developing cross-cutting computational methods with applications to a variety of domains, with an emphasis in the new exciting area of computational sustainability and scientific discovery. Prior to coming to Purdue, he received my Ph.D. degree in the Department of Computer Science at Cornell University, working with Professor Carla Gomes and Professor Bart Selman. He received a B.Sc. in 2011 from School of EECS, Peking University, China.
 
+<a href="https://www.cs.purdue.edu/people/graduate-students/jiang631.html" ><img style="float:center;height:60px;" src="https://jiangnanhugo.github.io/images/head.jpg"></a>
+
 Nan Jiang - Purdue University, USA - jiang631 (at) purdue.edu
 
-Marco Virgolin is a PhD student in the Department of Computer Science at Purdue University, USA. He is interested in integrating constarint reasoning and probabilistic reasoning algorithms for machine learning.
+Nan Jiang is a PhD student in the Department of Computer Science at Purdue University, USA. He is interested in integrating constarint reasoning and probabilistic reasoning algorithms for machine learning.
 
 
-# Sponsors
+<!-- # Sponsors
 
-<br>
-<a href="https://www.cs.purdue.edu/homes/yexiang/" ><img style="float:center;height:60px;" src=".https://www.cs.purdue.edu/homes/yexiang/images/emily2019/YexiangXue.jpg"></a>
-<a href="https://heal.heuristiclab.com" ><img style="float:center;height:60px;" src="../assets/images/uasau.png"></a>
+<br> -->
+
+

@@ -1,6 +1,5 @@
 <div class="notice">
-  <h1>2022 SRBench Competition</h1>
-  <p>This competition is now closed.</p>
+  <h1>2023 SciBench Competition</h1>
 </div>
 
 ---
