@@ -63,21 +63,17 @@ Track 1: [https://easychair.org/cfp/content.cgi?a=30862459;draft=1](https://easy
 
 # Organizers
 
-<a href="https://www.cs.purdue.edu/homes/yexiang/" ><img style="float:center;height:60px;" src="https://www.cs.purdue.edu/homes/yexiang/images/emily2019/YexiangXue.jpg"></a>
+<a href="https://www.cs.purdue.edu/homes/yexiang/" ><img style="float:center;height:100px;" src="https://www.cs.purdue.edu/homes/yexiang/images/emily2019/YexiangXue.jpg"></a>
 
 Yexiang Xue - Purdue University, USA - yexiang (at) purdue.edu
 
 Yexiang is an associated professor in the Department of Computer Science at Purdue University, USA. His research focuses on developing intelligent systems that tightly integrate decision making with machine learning and probabilistic reasoning under uncertainty. He has made core contributions across multiple scientific domains, ranging from artificial intelligence, machine learning, renewable energy, materials science, crowdsourcing, citizen science, urban computing, ecology, to behavioral econometrics. In his research, he focuses on developing cross-cutting computational methods with applications to a variety of domains, with an emphasis in the new exciting area of computational sustainability and scientific discovery. Prior to coming to Purdue, he received my Ph.D. degree in the Department of Computer Science at Cornell University, working with Professor Carla Gomes and Professor Bart Selman. He received a B.Sc. in 2011 from School of EECS, Peking University, China.
 
-<a href="https://www.cs.purdue.edu/people/graduate-students/jiang631.html" ><img style="float:center;height:60px;" src="https://jiangnanhugo.github.io/images/head.jpg"></a>
+<a href="https://www.cs.purdue.edu/people/graduate-students/jiang631.html" ><img style="float:center;height:100px;" src="https://jiangnanhugo.github.io/images/head.jpg"></a>
 
 Nan Jiang - Purdue University, USA - jiang631 (at) purdue.edu
 
 Nan Jiang is a PhD student in the Department of Computer Science at Purdue University, USA. He is interested in integrating constarint reasoning and probabilistic reasoning algorithms for machine learning.
 
-
-<!-- # Sponsors
-
-<br> -->
 
 
