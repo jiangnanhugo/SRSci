@@ -33,7 +33,6 @@ toc: false
 (click on legend name to select the points, shift+click to select both groups.)
 
 
-We analyze two types of problems:
 
 **Ground-truth Regression Problems**: problems for which the ground-truth model known. 
 Includes datasets from the [Feynman Symbolic Regression Database](https://space.mit.edu/home/tegmark/aifeynman.html) and dynamical systems from the [ODE-Strogatz Database](https://lacava.github.io/ode-strogatz/). 

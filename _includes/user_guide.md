@@ -13,105 +13,51 @@ conda env create -f environment.yml
 conda activate scibench
 ```
 
-2. Install the benchmark methods:
+2. Install the given package:
 
 ```bash
-bash install.sh
+cd scibench
+python setup.py install
 ```
 
 
-## Reproducing the benchmark results
+## Reproducing the given example algorithm results
+Here we show the main process on running the learning algorithm, evaluting the quality of the learned equations and submit the learning algorithm to the server for public and private leadboards.
 
-Experiments are launched from the `experiments/` folder via the script `analyze.py`.
-The script can be configured to run the experiment in parallel locally, on an LSF job scheduler, or on a SLURM job scheduler. 
-To see the full set of options, run `python analyze.py -h`. 
-
-**WARNING**: running some of the commands below will submit tens of thousands of experiments. 
-Use accordingly. 
-
-### Black-box experiment
-After installing and configuring the conda environment, the complete black-box experiment can be started via the command:
+After installing and configuring the conda environment, your learning algorithm should accept the following input arguments for a complete black-box experiment:
 
 ```bash
-python analyze.py /path/to/pmlb/encrypted_equations -n_trials 10 -results ../results_blackbox -time_limit 48:00
+python gp.py \
+-noise_type uniform \ # noise type
+-noise_rate 0.01 \ # noise rate
+-results ../path_to_result_file.csv \ # save your Top-10 best predicted expressions into this file
+-time_limit 3600  \ # the total running time of the whole program.
 ```
 
-### Ground-truth experiment
+### Output
+In the output file `path_to_result_file.csv`, you will see 10 lines of symbolic regressions, that are identified as the most possible equations by the GP learning algorithms.
 
-**Train the models**: we train the models subject to varying levels of noise using the options below. 
+
+
+
+
+## Evaluation
+
+After model training, the trained models are assessed for symbolic equivalence with the ground-truth data-generating processes. 
+This is handled in [evaluate.py](evaluate.py). 
+
+We will compare the following metrics of the predicted symbolic equations.
 
 ```bash
-# submit the ground-truth dataset experiment. 
-
-for data in "/path/to/pmlb/datasets/strogatz_" "/path/to/pmlb/datasets/feynman_" ; do # scibench and strogatz encrypted_equations
-    for TN in 0 0.001 0.01 0.1; do # noise levels
-        python analyze.py \
-            $data"*" \ #data folder
-            -results ../results_sym_data \ # where the results will be saved
-            -target_noise $TN \ # level of noise to add
-            -sym_data \ # for encrypted_equations with symbolic models
-            -n_trials 10 \
-            -m 16384 \ # memory limit in MB
-            -time_limit 9:00 \ # time limit in hrs
-            -job_limit 100000 \ # this will restrict how many jobs actually get submitted.
-            -tuned # use the tuned version of the estimators, rather than performing hyperparameter tuning.
-        if [ $? -gt 0 ] ; then
-            break
-        fi
-    done
-done
+python evaluate.py \
+-noise_type uniform \ # noise type
+-noise_rate 0.01 \ # noise rate
+-results ../path_to_result_file \ # save your Top-10 best predicted expressions into this file
 ```
 
-**Symbolic Assessment**: Following model training, the trained models are assessed for symbolic equivalence with the ground-truth data-generating processes. 
-This is handled in [assess_symbolic_model.py](experiment/assess_symbolic_model.py). 
-Use `analyze.py` to generate batch calls to this function as follows:
+### Output
+****: next to each `path_to_result_file.csv` file, an additional file named `path_to_result_file.json` is saved with the symbolic assessment included. 
 
-```bash
-# assess the ground-truth models that were produced using sympy
-for data in "/path/to/pmlb/datasets/strogatz_" "/path/to/pmlb/datasets/feynman_" ; do # scibench and strogatz encrypted_equations
-    for TN in 0 0.001 0.01 0.1; do # noise levels
-        python analyze.py \
-            -script assess_symbolic_model \
-            $data"*" \ #data folder
-            -results ../results_sym_data \ # where the results will be saved
-            -target_noise $TN \ # level of noise to add
-            -sym_data \ # for encrypted_equations with symbolic models
-            -n_trials 10 \
-            -m 8192 \ # memory limit in MB
-            -time_limit 1:00 \ # time limit in hrs
-            -job_limit 100000 \ # this will restrict how many jobs actually get submitted.
-            -tuned # use the tuned version of the estimators, rather than performing hyperparameter tuning.
-        if [ $? -gt 0 ] ; then
-            break
-        fi
-    done
-done
-```
-
-**Output**: next to each `.json` file, an additional file named `.json.updated` is saved with the symbolic assessment included. 
-
-### Post-processing
-
-Navigate to the [postprocessing](postprocessing) folder to begin postprocessing the experiment results. 
-The following two scripts collate the `.json` files into two `.feather` files to share results more easily. 
-You will notice these `.feather` files are loaded to generate figures in the notebooks. 
-They also perform some cleanup like shortening algorithm names, etc.
-
-```
-python collate_blackbox_results.py
-python collate_groundtruth_results.py
-```
-<!-- 
-**Visualization**
-
-- [groundtruth_results.ipynb](postprocessing/groundtruth_results.ipynb): ground-truth results comparisons
-- [blackbox_results.ipynb](postprocessing/blackbox_results.ipynb): ground-truth results comparisons
-- [statistical_comparisons.ipynb](postprocessing/statistical_comparisons.ipynb): post-hoc statistical comparisons -->
+### Submission
 
 
-## Using your own datasets
-
-To use your own datasets, you want to check out / modify read_file in read_file.py: https://github.com/cavalab/srbench/blob/4cc90adc9c450dad3cb3f82c93136bc2cb3b1a0a/experiment/read_file.py
-
-If your datasets follow the convention of https://github.com/EpistasisLab/pmlb/tree/master/datasets, i.e. they are in a pandas DataFrame with the target column labelled "targert", you can call `read_file` directly just passing the filename like you would with any of the PMLB datasets. 
-The file should be stored and compressed as a `.tsv.gz` file. 

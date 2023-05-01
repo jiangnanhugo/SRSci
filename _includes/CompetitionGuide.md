@@ -1,6 +1,5 @@
 <div class="notice">
-  <h1>2022 SRBench Competition</h1>
-  <p>This competition is now closed.</p>
+  <h1>2023 SRBench Competition</h1>
 </div>
 
 ---
@@ -13,7 +12,7 @@
 [paper]: https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/c0c7c76d30bd3dcaefc96f40275bdc0a-Abstract-round1.html
 [branch]: https://github.com/cavalab/srbench/tree/Competition2022
 
-# SRBench 2022 Competition Guidelines
+# SRBench 2023 Competition Guidelines
 To participate, the steps are relatively straightforward. 
 Participants fork this repo, checkout the [Competition2022 branch][branch], add a method in the submission folder (see [submission/feat-example][example]), and submit it as a [pull request][PR] to the [Competition2022 branch][branch]. 
 Once submitted, the continuous integration process will give feedback if there are any problems with the submission. 

@@ -80,13 +80,6 @@ Methods Staged for Benchmarking:
 - PSTree (Zhang 2021)
     [code](https://github.com/hengzhe-zhang/PS-Tree)
     
-<!-- # Contribute
-
-We are actively updating and expanding this benchmark. 
-Want to add your method? 
-See our [Contribution Guide.](https://cavalab.org/srbench/contributing/) -->
-
-<!-- # References -->
 
 
 
