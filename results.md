@@ -11,8 +11,8 @@ toc: true
 classes: wide
 layout: single
 sidebar:
-    title: "Competition 2023"
-    nav: "competition2023"
+    title: "Results"
+    nav: "results"
 ---
 
 {% capture my_include %}{% include RESULTS.md %}{% endcapture %}

@@ -1,6 +1,7 @@
 ---
 title: Competition Entry
 permalink: /competition-entry/
+classes: wide
 toc: true
 layout: single
 sidebar:
