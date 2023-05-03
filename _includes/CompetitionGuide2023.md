@@ -2,7 +2,7 @@
 
 tl;dr the first edition of the symbolic regression competition will allow the participants to experiment with their own pipeline to submit the best symbolic regression model. We will have two tracks: best accuracy-simplicity trade-off. Read below for more details and don’t forget to join our Discord server at [https://discord.gg/MeGnkHr4](https://discord.gg/MeGnkHr4).
 
-The participation link is now online! See [Entries](#entries).
+
 
 # Call for participation
 
@@ -32,7 +32,6 @@ At the competition submission deadline the repository of a participating team sh
 
 ## Evaluation criteria
 
-We have two leadboards: public and privaite.
 
 
 

@@ -5,9 +5,32 @@ img {
 }
 </style>
 
-{% include toc %}
+Solver Requirements
+=====================
 
-# SRBench Competition 2023
+### Computing Environment
+
+The evaluations will be run on Linux machines with up to 8 CPU cores and 20 GB memory.
+
+
+
+### Submission Directories
+
+For the convenience of evaluting each of the algorithms, we need to enforce the following requirements about the directory so that we can sucessfully run your algorthm. 
+
+1. you need to compress your code impelemntion into a **zip** file.
+
+2. Specify the extra packages and exact versions in **requirements.txt**, which are required to be installed before running your algorithms.
+
+2. In side your zip folder, the directory should contains **main.py** function, which is the default file to call your proposed algorithm.
+
+```bash
+YOUR_ALGOITHM/
+    main.py
+    requirements.txt
+    extra_files....
+```
+
 
 
 This competition seeks to distill algorithmic design choices and improve the practice of symbolic regression. 
@@ -30,7 +53,6 @@ In the synthetic track, methods were compared according to five properties: 1) r
 |  4 | GP           |          xx |
 
 
-## Private Leadboard
 
 
 

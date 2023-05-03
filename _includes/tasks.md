@@ -126,18 +126,6 @@ For example, common judging criteria are accuracy (in terms of [R2 Score](https:
 
 Full details on the judging criteria can be found [here][judging].
 
-### Computing Environment
-
-Experiments will be run in a heterogeneous cluster computing environment composed of several hosts with 24-28 core Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz processors and 250 GB of RAM. 
-
-The cluster uses an LSF scheduler. 
-We define a _job_ as the training of an algorithm on a single dataset. 
-For each job, an algorithm will have access to the following resources:
-
-| Benchmark | PMLB-20 | Synthetic | Real-World |
-|-----------|--------:|----------:|-----------:|
-| RAM       | 16 GB   | 16 GB     | 16 GB      |
-| CPU Cores | 4       | 8         | 8          |
 
 
 CPU cores for each job will span a single host, so methods are encouraged to support CPU-level parallelism. 

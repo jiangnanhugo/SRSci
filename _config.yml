@@ -18,8 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: SciBench
-subtitle: Scientist-in-the-loop benchmark for symbolic regression
+title: SciBench 2023 Competition
+subtitle: 
 # email: william.lacava@childrens.harvard.edu 
 description: >- # this means to ignore newlines until "baseurl:"
   Scientist-in-the-loop benchmark for symbolic regression
