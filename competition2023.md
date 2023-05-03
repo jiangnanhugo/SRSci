@@ -1,6 +1,6 @@
 ---
-title: 
-permalink: /competition-2023/
+title: Competition Entry
+permalink: /competition-entry/
 toc: true
 layout: single
 sidebar:

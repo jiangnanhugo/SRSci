@@ -1,7 +1,6 @@
 ---
 title:  
 layout: single
-classes: wide
 toc: false
 classes: wide
 ---

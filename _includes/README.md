@@ -3,7 +3,10 @@ Symbolic regression is the task of finding the underlying symbolic expression fr
 The major difficulties of exisiting symbolic regression benchmark are that:
 - the input data (experiment trials) is generated from random **i.i.d.** distribution.
 - the learning algorithm fits to the same dataset during training.
-Instead, from the history of experimental physics and exerpiemtnal chemistry, the data are not necessary **i.i.d.** distributed and they are actively queried throughout the process of learning. 
+
+Instead, from the history of experimental physics and exerpiemtnal chemistry,
+- the data are not necessary **i.i.d.** distributed 
+- the datasets are actively queried throughout the process of learning. 
 
 
 Therefore, we propose a new evaluation paradigm --- Scientist-in-the-loop benchmark for symbolic regression (**SciBench**) that simulates an integrated framework of scientist-in-the-loop for data generation and a learning algorithm for symbolic expression discovery . The goal of this challenge is to explore various approaches of querying data and fiting to dataset. The learning algorithms can determine what training data is needed to uncover the underlying symbolic expression.
@@ -12,7 +15,7 @@ Therefore, we propose a new evaluation paradigm --- Scientist-in-the-loop benchm
 
 
 # Organizer
-Nan Jiang (Purdue University), jiang631 at purdue dot edu
-Yexiang Xue (Purdue University), yexiang at purdue dot edu
+- Nan Jiang (Purdue University), jiang631 at purdue dot edu
+- Yexiang Xue (Purdue University), yexiang at purdue dot edu
 
 
