@@ -2,6 +2,7 @@
 title: Datasets
 permalink: /encrypted_equations/
 toc: false
+classes: wide
 ---
 
 <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>

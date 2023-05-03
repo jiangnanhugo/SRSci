@@ -18,7 +18,7 @@ These methods were automatically tested for the the competition.
 Winners of the *public* and *private* track are each entitled to a $1 cash prize.  
 
 
-## Public Leadboard
+## Leadboard
 
 In the synthetic track, methods were compared according to five properties: 1) re-discovery of exact expressions; and 2) sensitivity to noise. 
 
