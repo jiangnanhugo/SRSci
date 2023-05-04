@@ -4,46 +4,33 @@ main:
     url: / 
     children:
     - title: "Benchmarked Methods"
-      url: /#benchmarked-methods
+      url: /benchmarked-methods
     - title: "References"
-      url: /#references
+      url: /references
     - title: "Contact"
-      url: /#contact
-  - title: "User Guide"
-    url: /user-guide
+      url: /contact
+  - title: "FILE FORMATS"
+    url: /file-formats
     children:
-    - title: "Installation"
-      url: /user-guide/#installation
-    - title: "Reproducing the Experiment"
-      url: /user-guide/#reproducing-the-experiment
-  - title: "Contributing"
-    url: /contributing/
-  - title: "Results"
+    - title: "Input Format"
+      url: /file-formats/input-format
+    - title: "Result Format"
+      url: /file-formats/result-format
+  - title: "COMPETITION ENTRY"
+    url: /competition-entry
+    children:
+    - title: "Tasks"
+      url: /competition-entry/tasks
+    - title: "Requirements"
+      url: /competition-entry/requirements
+    - title: "Submission"
+      url: /competition-entry/submission
+  - title: "RESULTS"
     url: /results/
-  - title: "Datasets"
-    url: /encrypted_equations/
-  - title: "Competition 2023"
-    url: /competition-2023/
     children:
-    - title: "Results"
-      url: /competition-2023/
-    - title: "Competition Guide"
-      url: /competition-guide/
-      
-competition:
-  - title: "Results"
-    url: /competition-2023/
-  - title: "Competition Guide"
-    url: /competition-guide/
-    children:
-    - title: "Instructions"
-      url: /competition-guide/#instructions
-    - title: "Regressor Guide"
-      url: /competition-guide/#regressor-guide
-    - title: "Competition Details"
-      url: /competition-guide/#competition-details
-    - title: "Judging Criteria"
-      url: /judging-criteria/
- 
+    - title: "Evaluation Criteria"
+      url: /results/evaluation-criteria
+    - title: "Leader Board"
+      url: /results/leader-board
 
 

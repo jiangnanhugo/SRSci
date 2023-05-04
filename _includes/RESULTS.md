@@ -1,6 +1,4 @@
 
-Results
-=============
 
 Here we provide the results from the competition.
 
