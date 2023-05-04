@@ -1,4 +1,5 @@
 # Welcome to SciBench 2023 Competitions!
+
 Symbolic regression is the task of finding the underlying symbolic expression from the given dataset. 
 The major difficulties of existing symbolic regression benchmarks are that:
 - the input data (experiment trials) is generated from random **i.i.d.** distribution.
@@ -14,7 +15,7 @@ Therefore, we propose a new evaluation paradigm --- Scientist-in-the-loop benchm
 
 
 
-# Organizer
+## Organizer
 - Nan Jiang (Purdue University), jiang631 at purdue dot edu
 - Yexiang Xue (Purdue University), yexiang at purdue dot edu
 

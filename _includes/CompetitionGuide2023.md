@@ -30,7 +30,7 @@ At the competition submission deadline the repository of a participating team sh
     - Installation and execution instructions 
     - Scripts (Jupyter Notebook is accepted) with detailed instructions of all steps used to produce models (including hyperparameters search, if any) 
 
-## Evaluation criteria
+
 
 
 
@@ -38,43 +38,12 @@ At the competition submission deadline the repository of a participating team sh
 ### Leadboard
 
 
-The final score of each competitor will be composed of:
-
-- *acc*: Rank based on the accuracy (R^2) on a separate validation set for each data set.
-- *simpl*: Rank based on the a simplicity (number of nodes calculating by traversing the sympy expression) of the model for each data set.
-
-The rank will be calculated for each data set independently such that, with N participants, the k-th ranked competitor (k=1 being the best) will be assigned a value of *N - k + 1*. The final score will be the harmonic mean of all of the scores and each participant will be ranked accordingly:
-
-```python
-score = \frac{2*n}{ \sum_{i=1}^n (1/acc[i]) + (1/simpl[i]) for i in (1..n)]}
-```
-
-
 
 # Come chat with us!!
 
 If you want to ask any question, provide some feedback or simply chit-chat, join us at the Discord server: [https://discord.gg/MeGnkHr4](https://discord.gg/MeGnkHr4).
 
-# Entries
 
-To participate of the competition, each member of the team must submit their proposed algorithms with the link corresponding to the desired track. The first member to enroll will create a team name and the other members will choose their team from the list of choices. After enrolling, you are good to go!
-
-Track 1: [https://easychair.org/cfp/content.cgi?a=30862459;draft=1](https://easychair.org/cfp/content.cgi?a=30862459;draft=1)
-
-
-# Organizers
-
-<a href="https://www.cs.purdue.edu/homes/yexiang/" ><img style="float:center;height:100px;" src="https://www.cs.purdue.edu/homes/yexiang/images/emily2019/YexiangXue.jpg"></a>
-
-Yexiang Xue - Purdue University, USA - yexiang (at) purdue.edu
-
-Yexiang is an assistant professor in the Department of Computer Science at Purdue University, USA. His research focuses on developing intelligent systems that tightly integrate decision making with machine learning and probabilistic reasoning under uncertainty. He has made core contributions across multiple scientific domains, ranging from artificial intelligence, machine learning, renewable energy, materials science, crowdsourcing, citizen science, urban computing, ecology, to behavioral econometrics. In his research, he focuses on developing cross-cutting computational methods with applications to a variety of domains, with an emphasis in the new exciting area of computational sustainability and scientific discovery. Prior to coming to Purdue, he received my Ph.D. degree in the Department of Computer Science at Cornell University, working with Professor Carla Gomes and Professor Bart Selman. He received a B.Sc. in 2011 from School of EECS, Peking University, China.
-
-<a href="https://www.cs.purdue.edu/people/graduate-students/jiang631.html" ><img style="float:center;height:100px;" src="https://jiangnanhugo.github.io/images/head.jpg"></a>
-
-Nan Jiang - Purdue University, USA - jiang631 (at) purdue.edu
-
-Nan Jiang is a PhD student in the Department of Computer Science at Purdue University, USA. He is interested in integrating constarint reasoning and probabilistic reasoning algorithms for machine learning.
 
 
 
