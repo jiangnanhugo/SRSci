@@ -1,6 +1,6 @@
 # main links
 main:
-  - title: "SciBench"
+  - title: "SCIBENCH"
     url: / 
     children:
     - title: "Organizer"
