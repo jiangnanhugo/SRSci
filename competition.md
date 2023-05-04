@@ -6,5 +6,5 @@ toc: false
 layout: single
 ---
 
-{% capture my_include %}{% include CompetitionGuide2023.md %}{% endcapture %}
+{% capture my_include %}{% include CompetitionGuide.md %}{% endcapture %}
 {{ my_include | markdownify }}

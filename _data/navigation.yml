@@ -8,10 +8,23 @@ main:
   - title: "FILE FORMATS"
     url: /file-formats
     children:
+    - title: "Expression Format"
+      url: /file-formats/expression-format
     - title: "Input Format"
       url: /file-formats/input-format
-    - title: "Result Format"
-      url: /file-formats/result-format
+    - title: "Output Format"
+      url: /file-formats/output-format
+  - title: "DATA QUERY PROTOCOL"
+    url: /data-query-protocol
+    children:
+    - title: "Init"
+      url: /data-query-protocol/#Init Function
+    - title: "Data Query"
+      url: /data-query-protocol/#Data Query Function
+    - title: "Loss Computation"
+      url: /data-query-protocol/#Loss Computation Functions
+    - title: "Equation Property"
+      url: /data-query-protocol/#Property Functions
   - title: "COMPETITION ENTRY"
     url: /competition-entry
     children:

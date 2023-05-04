@@ -5,8 +5,8 @@ The major difficulties of existing symbolic regression benchmarks are that:
 - the input data (experiment trials) is generated from random **i.i.d.** distribution.
 - the learning algorithm fits to the same dataset during training.
 
-Instead, from the history of experimental physics and experimental chemistry,
-- the data are not necessary **i.i.d.** distributed 
+Instead, from the history of experimental physics and experimental chemistry, 
+- the data are not necessary **i.i.d.** distributed.
 - the datasets are actively queried throughout the process of learning. 
 
 
@@ -18,5 +18,10 @@ Therefore, we propose a new evaluation paradigm --- Scientist-in-the-loop benchm
 ## Organizer
 - Nan Jiang (Purdue University), jiang631 at purdue dot edu
 - Yexiang Xue (Purdue University), yexiang at purdue dot edu
+
+
+## Discord Contacts
+
+If you want to ask any question, provide some feedback or simply chit-chat, join us at the [Discord server](https://discord.gg/MeGnkHr4).
 
 

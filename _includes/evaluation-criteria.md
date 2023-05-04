@@ -12,3 +12,17 @@ The rank will be calculated for each data set independently such that, with N pa
 score = \frac{2*n}{ \sum_{i=1}^n (1/acc[i]) + (1/simpl[i]) for i in (1..n)]}
 ```
 
+
+## Evaluation Scripts
+
+After model training, the trained models are assessed for symbolic equivalence with the ground-truth data-generating processes. 
+This is handled in [evaluate.py](evaluate.py). 
+
+We will compare the following metrics of the predicted symbolic equations.
+
+```bash
+python evaluate.py \
+-noise_type uniform \ # noise type
+-noise_rate 0.01 \ # noise rate
+-results ../path_to_result_file \ # save your Top-10 best predicted expressions into this file
+```
