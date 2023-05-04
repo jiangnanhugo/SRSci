@@ -3,12 +3,8 @@ main:
   - title: "SciBench"
     url: / 
     children:
-    - title: "Benchmarked Methods"
-      url: /benchmarked-methods
-    - title: "References"
-      url: /references
-    - title: "Contact"
-      url: /contact
+    - title: "Organizer"
+      url: /#organizer
   - title: "FILE FORMATS"
     url: /file-formats
     children:
