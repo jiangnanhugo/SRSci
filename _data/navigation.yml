@@ -1,10 +1,5 @@
 # main links
 main:
-  - title: "SCIBENCH"
-    url: / 
-    children:
-    - title: "Organizer"
-      url: /#organizer
   - title: "FILE FORMATS"
     url: /file-formats
     children:
@@ -17,14 +12,14 @@ main:
   - title: "DATA QUERY PROTOCOL"
     url: /data-query-protocol
     children:
-    - title: "Init"
-      url: /data-query-protocol/#Init Function
+    - title: "Initialization"
+      url: /data-query-protocol/#init-function
     - title: "Data Query"
-      url: /data-query-protocol/#Data Query Function
+      url: /data-query-protocol/#data-query-function
     - title: "Loss Computation"
-      url: /data-query-protocol/#Loss Computation Functions
+      url: /data-query-protocol/#loss-computation-functions
     - title: "Equation Property"
-      url: /data-query-protocol/#Property Functions
+      url: /data-query-protocol/#property-functions
   - title: "COMPETITION ENTRY"
     url: /competition-entry
     children:

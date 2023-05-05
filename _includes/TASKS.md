@@ -15,25 +15,23 @@ Here we show the main process on running the learning algorithm, evaluting the q
 
 After installing and configuring the conda environment, your learning algorithm should accept the following input arguments for a complete black-box experiment:
 
+## Input Arguments Requirements
 ```bash
 python gp.py \
+-eq_name PATH_TO_THE_INPUT_SYMBOLIC_EQUATION \
 -noise_type uniform \ # noise type
 -noise_rate 0.01 \ # noise rate
--results ../path_to_result_file.txt \ # save your Top-10 best predicted expressions into this file
--time_limit 3600  \ # the total running time of the whole program.
+-results ../PATH_TO_THE_OUTPUT_FILE.txt \ # save your best predicted expressions into this file
 ```
+The format of `PATH_TO_THE_INPUT_SYMBOLIC_EQUATION` can be found at [Input file format]() and `PATH_TO_THE_OUTPUT_FILE.txt` is detailed in [Output file format]().
 
 ### Output
-In the output file `path_to_result_file.txt`, you will see 10 lines of symbolic regressions, that are identified as the most possible equations by the GP learning algorithms.
+In the output file `PATH_TO_THE_OUTPUT_FILE.txt`, you will see 10 lines of symbolic regressions, that are identified as the most possible equations by the GP learning algorithms.
 
 ```txt
 name_of_equation: xxxxxx.encrypt
 name_of_your_algrithm: xxxxxxx
-best_predicted_equations:
-x1+x2
-x1+x3
-x1*x2
-x1*x3
+best_predicted_equations: 
 ```
 
 

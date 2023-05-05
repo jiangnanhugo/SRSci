@@ -46,8 +46,9 @@ defaults:
       sidebar:
         nav: "main"
       layout: single
-      toc: true
+      toc: false
       author_profile: true
+      classes: wide
 
 footer:
   links:

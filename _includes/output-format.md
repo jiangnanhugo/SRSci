@@ -14,3 +14,6 @@ algorithm_name: scibench_algorithm
 equation_file_name: sample_equation.in
 the_predicted_equation: "[('+','binary'), ('*', 'binary'), ('0.1', 'const'), ('X1', 'var'), ('sin', 'unary'), ('X2', 'var')]"
 ```
+- This example says the user propose a learning algorithm for solving symbolic regression task with name `scibench_algorithm`. 
+- The underlying true equation's filename is `sample_equation.in`. 
+- The best symbolic expression discovered by the proposed algroithm is `"[('+','binary'), ('*', 'binary'), ('0.1', 'const'), ('X1', 'var'), ('sin', 'unary'), ('X2', 'var')]"`. See [Expression Format](/file-formats/expression-format/) for the defintion of expression.

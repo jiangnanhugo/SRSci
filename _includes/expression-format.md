@@ -1,36 +1,41 @@
-Here we use an example symbolic equation `0.1 * X1 + sin(X2)`.
+Here we use an example symbolic expression "`0.1 * X1 + sin(X2)`".
 ## Expression Tree
-It is a specific kind of a binary tree used to represent expressions. 
+It is a specific kind of binary tree used to represent expressions. 
 
 ### Example
+The expression "`0.1 * X1 + sin(X2)`" can be represented as the following tree:
 ```bash
-      "+"
-    /     \
-  "*"     "sin"
-  /  \      |
-0.1  X1     X2    
+        '+'
+      /      \
+    '*'      'sin'
+   /   \       |
+'0.1'  'X1'   'X2'    
 ```
+Notice that the expression tree is not unique for the given symbolic expression. But gvien the expression tree, it can uniquely determine the symbolic expression.
 
 ## Pre-order Traversal
-In a preorder traversal of a binary tree, we "visit" a node and then traverse both of its subtrees.
+In a preorder traversal of a binary tree, we first *visit* a node,  then traverse its left subtrees, and finally its right subtrees.
 
+Using the above expression tree, the pre-order traversal is:
 ```python
-["+", "*", "0.1", "X1", "sin","X2"]
+['+', '*', '0.1', 'X1', 'sin','X2']
 ```
 
 ## Extended Pre-order Traversal Format
-The expression to be stored into file is based on the pre-order traversal. One thing left is to 
-- differentiate unary and binary operators. For example `sine` function is a unary operator, that only takes one input. `+` is binary operator that needs two inputs. 
-- differentiabe constants and vaiables in the leaves.
+The expression to be stored in the file is based on the pre-order traversal. We further need to:
+- differentiate unary and binary operators for the internal nodes. For example `sine` function is a unary operator, that only takes one input. `+` is binary operator that needs two inputs. 
+- differentiate constants and variables in the leaves.
 
 Therefore, we define the **extended** format based on the Pre-order Traversal.
 
 ### Example
 ```python
-[("+",'binary'), ("*", "binary"), ("0.1", "const"), ("X1", "var"), ("sin", "unary"), ("X2", "var")]
+[('+','binary'), ('*', 'binary'), ('0.1', 'const'), ('X1', 'var'), ('sin', 'unary'), ('X2', 'var')]
 ```
 It implies:
-- "+", "*", "/" are binary operators;
-- "sin" is a unary operator;
-- "0.1" is a constant;
-- "X1", "X2" are input variables.
+- '+', '*', '/' are binary operators, noted as 'binary';
+- 'sin' is a unary operator, noted as 'unary';
+- '0.1' is a constant, noted as 'const';
+- 'X1', 'X2' are input variables, noted as 'var'.
+
+Based on this list in *extended pre-order traversal format*, we can uniquely determine the expression tree and further uniquely determine its symbolic expression.
