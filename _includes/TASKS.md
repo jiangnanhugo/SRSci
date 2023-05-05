@@ -1,45 +1,53 @@
+## Symbolic Expression
+A symbolic expression $$\phi$$ is expressed as variables and constants connected by a set of operators. Variables are allowed to change across different contexts, while constants remain the same. Each operator has a predetermined arity, i.e., the number of operands taken by the operator. 
+Each operand of an operator is either a variable, a constant, or a self-contained symbolic expression. 
+A symbolic expression can also be drawn as a tree, where variables and constants reside in leaves, and operators reside in inner nodes. 
+
+See [example expression](/file-formats/expression-format/).
 
 
-## Task
-
-We have provided a [conda environment](environment.yml), [configuration script](configure.sh) and [installation script](install.sh) that should make installation straightforward.
-We've currently tested this on Ubuntu and CentOS. 
-Steps:
-
-1. Install the conda environment:
+## Classic Symbolic Regression
+Given a dataset $$\mathcal{D}=[(\mathbf{x}_1, y_1), (\mathbf{x}_n,y_n)]$$ and a loss function $$\ell(\cdot,\cdot)$$, where  $$\mathbf{x}_i\in \mathbb{R}^m$$ and $$y_i\in \mathbb{R}$$, the objective of symbolic regression (SR) is to search for the optimal symbolic expression $$\phi^*$$ within the space of all candidate expressions $$\Pi$$, defined by a set of *mathematical functions*  (e.g., $$\exp, \ln,\sin,\cos$$) and *arithmetic operations* (e.g. $$+,-,\times,\div$$), that minimizes the average loss,
+$$\phi^*=\arg\min_{\hat{\phi}\in \Pi}\frac{1}{n} \sum_{i=1}^n \ell(\hat{\phi}(\mathbf{x}_i), y_i)$$.
 
 
+### Note
+- We use `function_set` to denote the union of all the avaialble mathematical functions and arithmetic operations.
 
-## 2. Reproducing the given example algorithm results
-Here we show the main process on running the learning algorithm, evaluting the quality of the learned equations and submit the learning algorithm to the server for public and private leadboards.
+- The loss function $$\ell(\cdot,\cdot)$$ is defined at [this link](/data-query-protocol/#metric-functions).
 
-After installing and configuring the conda environment, your learning algorithm should accept the following input arguments for a complete black-box experiment:
+## Our Scientist-in-the-loop Symbolic Regression
+GIVEN:
+- there are $$m$$ input variables, i.e., $$\mathbf{x}\in \mathbb{R}^m$$ and single output variable $$y\in \mathbb{R}$$.
+- there are `function_set` that is a superset of mathematical operators for the true symbolic equation $$\phi$$.
 
-## Input Arguments Requirements
+Your task is to:
+- query any data you want through our [data protocol](/data-query-protocol/). For example, you can query $$n$$ data points, $$\mathcal{D}=[(\mathbf{x}_1, y_1), (\mathbf{x}_n,y_n)]$$.
+- Discover the optimal symbolic equation $$\hat{\phi}$$ by miminizimg the objective function ($$\ell$$):
+$$\hat{\phi}^*=\arg\min_{\hat{\phi}\in \Pi}\frac{1}{n} \sum_{i=1}^n \ell(\hat{\phi}(\mathbf{x}_i), y_i)$$
+
+
+
+## Execution of Your Learning algorithm
+Here we show the main process on running the learning algorithm. For a complete black-box experiment, your algorithm will be executed from the command line as follow:
 ```bash
-python gp.py \
--eq_name PATH_TO_THE_INPUT_SYMBOLIC_EQUATION \
--noise_type uniform \ # noise type
--noise_rate 0.01 \ # noise rate
--results ../PATH_TO_THE_OUTPUT_FILE.txt \ # save your best predicted expressions into this file
-```
-The format of `PATH_TO_THE_INPUT_SYMBOLIC_EQUATION` can be found at [Input file format]() and `PATH_TO_THE_OUTPUT_FILE.txt` is detailed in [Output file format]().
-
-### Output
-In the output file `PATH_TO_THE_OUTPUT_FILE.txt`, you will see 10 lines of symbolic regressions, that are identified as the most possible equations by the GP learning algorithms.
-
-```txt
-name_of_equation: xxxxxx.encrypt
-name_of_your_algrithm: xxxxxxx
-best_predicted_equations: 
+python main.py \
+--input_eq_name PATH_TO_THE_INPUT_SYMBOLIC_EQUATION \
+--noise_type uniform \ # noise type
+--noise_scale 0.01 \ # noise rate
+--output_filename ../PATH_TO_THE_OUTPUT_FILE \ # save your best predicted expressions into this file
 ```
 
 
 
+### Input Arguments
 
-### Output
-next to each `path_to_result_file.txt` file, an additional file named `path_to_result_file.json` is saved with the symbolic assessment included. 
+- `--input_eq_name`: input equation file name. The format of "`PATH_TO_THE_INPUT_SYMBOLIC_EQUATION`" can be found at [Input file format](/file-formats/input-format/).
+- `--noise_type`: type of noise that is applied over the output of true equation. See more noise types at [this link](data-query-protocol/#noise).
+- `--noise_scale`: the sacle of noise.
+- `--output_filename`: write the best predicted equation by your learning algoirthm. The format of "`PATH_TO_THE_OUTPUT_FILE`" can be found at [output file format](/file-formats/output-format/).
 
 
 
-The definition of the output file format can be found at []().
+### Output of Program
+Your program should writes the most possible equations predicted by the your learning algorithm to file `PATH_TO_THE_OUTPUT_FILE`, for the given input equation with name `PATH_TO_THE_INPUT_SYMBOLIC_EQUATION`.
