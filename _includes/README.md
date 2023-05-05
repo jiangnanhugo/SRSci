@@ -10,7 +10,9 @@ Instead, from the history of experimental physics and experimental chemistry,
 - the datasets are actively queried throughout the process of learning. 
 
 
-Therefore, we propose a new evaluation paradigm --- Scientist-in-the-loop benchmark for symbolic regression (**SciBench**) that simulates an integrated framework of scientist-in-the-loop for data generation and a learning algorithm for symbolic expression discovery. The goal of this challenge is to explore various approaches to querying data and fitting the model to the dataset. The learning algorithms can determine what training data is needed to uncover the underlying symbolic expression.
+Therefore, we propose a new evaluation paradigm --- Scientist-in-the-loop benchmark for symbolic regression (**SciBench**) that simulates an integrated framework of scientist-in-the-loop for data generation and a learning algorithm for symbolic expression discovery. 
+
+The goal of this challenge is to explore various approaches to querying data and fitting the model to the dataset. The learning algorithms can determine what training data is needed to uncover the underlying symbolic expression.
 
 
 
