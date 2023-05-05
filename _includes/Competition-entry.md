@@ -1,4 +1,4 @@
-# Symbolic Regression Competition - 2023
+
 
 tl;dr the symbolic regression competition that allows the participants to experiment with their own pipelines to submit the best symbolic regression model.
 
