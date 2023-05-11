@@ -18,12 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: SciBench 2023 Competition
+title: SRSci 2023 Competition
 subtitle: 
 description: >- # this means to ignore newlines until "baseurl:"
-  Scientist-in-the-loop benchmark for symbolic regression
+  Symbolic Regression Using Scientific Approaches (SRSci)
 github_username:  jiangnanhugo
-repository: "jiangnanhugo/scibench"
+repository: "jiangnanhugo/srsci"
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
@@ -33,7 +33,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
-domain: jiangnanhugo.github.io/scibench # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+domain: jiangnanhugo.github.io/srsci # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 
 
 # breadcrumbs: true
@@ -50,11 +50,36 @@ defaults:
       author_profile: true
       classes: wide
 
+scholar:
+  style: apa
+  locale: en
+
+  sort_by: none
+  order: ascending
+
+  group_by: none
+  group_order: ascending
+
+  source: ./_bibliography
+  bibliography: references.bib
+  bibliography_template: ""
+
+  replace_strings: true
+  join_strings:    true
+
+  use_raw_bibtex_entry: false
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  query: "@*"
+  
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/jiangnanhugo/scibench/"
+      url: "https://github.com/jiangnanhugo/srsci/"
 
 
 

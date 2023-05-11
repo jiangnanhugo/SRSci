@@ -14,7 +14,7 @@ To participate in the competition, each member of the team must submit their pro
 [SciBench 2023 on Easychair](https://easychair.org/cfp/content.cgi?a=30862459;draft=1)
 
 ## Note
-Make sure you follow the [submission requirements](/competition-entry/requirements/#submission-requirements). Failure of following all the mentioned requirements may cause no update in the Leader Board.
+Make sure you follow the [submission requirements](/scibench/competition-entry/requirements/#submission-requirements). Failure of following all the mentioned requirements may cause no update in the Leader Board.
 
 
 
