@@ -1,16 +1,18 @@
 ## Evaluation Criteria
 
+## Metric Functions
 
-The final score of each competitor will be composed of:
-
-- *acc*: Rank based on the accuracy (R^2) on a separate validation set for each data set.
-- *simpl*: Rank based on the a simplicity (number of nodes calculating by traversing the sympy expression) of the model for each data set.
-
-The rank will be calculated for each data set independently such that, with N participants, the k-th ranked competitor (k=1 being the best) will be assigned a value of *N - k + 1*. The final score will be the harmonic mean of all of the scores and each participant will be ranked accordingly:
-
-```python
-score = \frac{2*n}{ \sum_{i=1}^n (1/acc[i]) + (1/simpl[i]) for i in (1..n)]}
-```
+- 'neg_mse': Negative mean squared error.
+- 'neg_rmse':  Negative root mean squared error.
+- 'neg_nmse': Negative normalized mean square error. 
+- 'neg_nrmse': Negative normalized root mean squared error.
+- 'neglog_mse': negative log mean squared error.
+- 'inv_mse': inverse mean squared error. 
+- 'inv_nmse': inverse normalized mean squared error. 
+- 'inv_nrmse': inverse normalized root mean squared error.
+- 'pearson':  Pearson correlation coefficient. 
+- 'spearman': Spearman correlation coefficient.
+- 'accuracy(r2)': Accuracy based on R2 value.
 
 
 ## Evaluation Scripts

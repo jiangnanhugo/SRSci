@@ -68,19 +68,7 @@ def get_function_set(self)
 ```
 It returns the `function_set` that is used to construct this equation.
 
-## Metric Functions
 
-- 'neg_mse': Negative mean squared error.
-- 'neg_rmse':  Negative root mean squared error.
-- 'neg_nmse': Negative normalized mean square error. 
-- 'neg_nrmse': Negative normalized root mean squared error.
-- 'neglog_mse': negative log mean squared error.
-- 'inv_mse': inverse mean squared error. 
-- 'inv_nmse': inverse normalized mean squared error. 
-- 'inv_nrmse': inverse normalized root mean squared error.
-- 'pearson':  Pearson correlation coefficient. 
-- 'spearman': Spearman correlation coefficient.
-- 'accuracy(r2)': Accuracy based on R2 value.
 
 
 ## Noise

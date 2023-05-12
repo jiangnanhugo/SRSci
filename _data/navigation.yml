@@ -23,8 +23,8 @@ main:
   - title: "COMPETITION ENTRY"
     url: /competition-entry
     children:
-    - title: "Tasks"
-      url: /competition-entry/tasks
+    - title: "Participate"
+      url: /competition-entry/participate
     - title: "Requirements"
       url: /competition-entry/requirements
     - title: "Submission"

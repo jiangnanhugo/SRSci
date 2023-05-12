@@ -1,27 +1,20 @@
-The input expression file constains two lines. The first line contains a single integer,
-- `0` indicates it is an un-encrypted file;
-- `1` indicates it is an encrypted file.
-
-The second line is different for encrypted file and un-crypted file. See below for details.
+The input expression file are of two types: un-encrypted file and encrypted file. See below for details.
 
 ## Un-encrypted file format
 
 
 ### Example
 ```txt
-0
-b'{\n  "eq_name": "sample_equation",\n  "num_vars": 2,\n  "function_set": [\n  "sqrt",\n    "add",\n    "sub",\n    "mul",\n    "div",\n    "inv",\n    "sin",\n    "cos",\n    "const"\n  ],\n  "eq_expression": "[('+','binary'), ('*', 'binary'), ('0.1', 'const'), ('X1', 'var'), ('sin', 'unary'), ('X2', 'var')]"\n}'
+'{  "eq_name": "sample_equation",  "num_vars": 2,  "function_set": [  "sqrt",    "add",    "sub",    "mul",    "div",    "inv",    "sin",    "cos",    "const"  ],  "eq_expression": "[('+','binary'), ('*', 'binary'), ('0.1', 'const'), ('X1', 'var'), ('sin', 'unary'), ('X2', 'var')]"\n}'
 ```
 The second line represents a dictinary:
 ```python
 {
-    'eq_name': 'sample_equation', 
     'num_vars': 2, 
     'function_set': ['sqrt', 'add', 'sub', 'mul', 'div', 'inv', 'sin', 'cos', 'const'], 
     'eq_expression': [('+','binary'), ('*', 'binary'), ('0.1', 'const'), ('X1', 'var'), ('sin', 'unary'), ('X2', 'var')]
 }
 ```
-- `eq_name`: the name of the equation.
 - `num_vars`: number of varaibles in the symbolic expression.
 - `function_set`: it represent the set of mathemetical operators. The symbolic expression will use subset of the operators.
 - `eq_expression`: The defintion can be found at [expression defintion](/file-formats/expression-format/).
