@@ -54,7 +54,7 @@ We will randomly generate a minibatch of input $X$, and obtain the ground-truth 
 
 Here is the [\[page\]](/srsci/results/evaluation-criteria/#evaluation-criteria) describing all the loss functions.
 
-Here is the [\[page\]] describing our computational environment of evaluation.
+Here is the [\[page\]](/srsci/competition-entry/requirements/#environmental-requirements) describing our computational environment of evaluation.
 
 ## Organizer
 - Nan Jiang (Purdue University), jiang631 at purdue dot edu
