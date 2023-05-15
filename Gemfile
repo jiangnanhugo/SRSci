@@ -9,7 +9,7 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll"
 gem "minimal-mistakes-jekyll"
-gem "github-pages", group: :jekyll_plugins
+gem "github-pages", "~> 228", group: :jekyll_plugins
 gem "jekyll-scholar", group: :jekyll_plugins
 
 gem "jekyll-include-cache", group: :jekyll_plugins
@@ -30,4 +30,3 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
 
 gem "webrick", "~> 1.8"
-# gem "bibtex-ruby"
