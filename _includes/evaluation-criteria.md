@@ -24,6 +24,7 @@ We also if the proposed method are robust subject to the noises. The following l
 - 'uniform': [a uniform distribution](https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.uniform.html#numpy.random.Generator.uniform).
 - 'laplace': [the Laplace or double exponential distribution with specified location (or mean) and scale (decay)](https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.laplace.html#numpy.random.Generator.laplace).
 - 'logistic': [a logistic distribution](https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.logistic.html#numpy.random.Generator.logistic).
+
 <!-- ## Evaluation Scripts
 
 After model training, the trained models are assessed for symbolic equivalence with the ground-truth data-generating processes. 
