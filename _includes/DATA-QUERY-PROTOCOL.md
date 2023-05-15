@@ -71,9 +71,3 @@ It returns the `function_set` that is used to construct this equation.
 
 
 
-## Noise
-- 'normal': [a normal (Gaussian) distribution](https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.normal.html#numpy.random.Generator.normal).
-- 'exponential': [an exponential distribution](https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.exponential.html#numpy.random.Generator.exponential).
-- 'uniform': [a uniform distribution](https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.uniform.html#numpy.random.Generator.uniform).
-- 'laplace': [the Laplace or double exponential distribution with specified location (or mean) and scale (decay)](https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.laplace.html#numpy.random.Generator.laplace).
-- 'logistic': [a logistic distribution](https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.logistic.html#numpy.random.Generator.logistic).

@@ -5,7 +5,12 @@ Here we collect all the requirements when evaluating your algorithms.
 
 ### Hardware Budget
 
-The evaluations will be run on Linux machines (Ubuntu/CentOS) with up to 8 CPU cores and 20 GB of memory.
+
+|----------:|--------------:|
+|    System | Ubuntu/CentOS |
+| CPU cores |             8 |
+|    Memory |        <=20GB |
+
 
 ### Time Budget
 
@@ -14,10 +19,10 @@ Methods must adhere to a fixed time budget for the competition.
 Our goal is to allow "slow" implementations have enough time to learn. 
 
 
-The time limits are as follows:
-
-- For datasets up to 3 variables, 30 minutes (0.5 hours)
-- For datasets up to 10 variables, 180 minutes (3 hours)
+|                |     Time |
+|---------------:|---------:|
+| <= 3 variables | 0.5 hour |
+| <=10 variables |   3 hour |
 
 
 ## Submission Requirements
@@ -54,7 +59,7 @@ dependencies:
 ```
 this example specifies the Python version to be `3.8` and also specifies installing `numpy`, `pandas`, and `pip` packages with their corresponding version numbers. The name of this environment **must be** `YOUR_ALGOITHM_NAME`. We will install this specified Python environment via the following command:
 ```
-conda conda env create -f environment.yml
+conda env create -f environment.yml
 ```
 Then we will run the following command to switch to your specified Python environment:
 ```
@@ -62,8 +67,8 @@ conda activate YOUR_ALGOITHM_NAME
 ```
 See a detailed discussion of the Python environment at [this link](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
 
-### Execution of Algorithm
+<!-- ### Execution of Algorithm
 You need to make sure your algorithm will be executed from the command line following [this example](), that is
 - Your **`main.py`** accpets the required input arguments: `[--input_eq_name, --noise_type, --noise_scale, --output_filename]`.
 - Your program output to the correct file and the output file format is also correct.
-
+ -->

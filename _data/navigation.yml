@@ -5,23 +5,23 @@ main:
     children:
     - title: "Expression Format"
       url: /file-formats/expression-format
-    - title: "Input Format"
-      url: /file-formats/input-format
+    # - title: "Input Format"
+    #   url: /file-formats/input-format
     - title: "Output Format"
       url: /file-formats/output-format
-  - title: "DATA QUERY PROTOCOL"
-    url: /data-query-protocol
-    children:
-    - title: "Initialization"
-      url: /data-query-protocol/#init-function
-    - title: "Data Query"
-      url: /data-query-protocol/#data-query-function
-    - title: "Loss Computation"
-      url: /data-query-protocol/#loss-computation-functions
-    - title: "Equation Property"
-      url: /data-query-protocol/#property-functions
+  # - title: "DATA QUERY PROTOCOL"
+  #   url: /data-query-protocol
+  #   children:
+  #   - title: "Initialization"
+  #     url: /data-query-protocol/#init-function
+  #   - title: "Data Query"
+  #     url: /data-query-protocol/#data-query-function
+  #   - title: "Loss Computation"
+  #     url: /data-query-protocol/#loss-computation-functions
+  #   - title: "Equation Property"
+  #     url: /data-query-protocol/#property-functions
   - title: "COMPETITION ENTRY"
-    url: /competition-entry
+    url: /competition-entry/participate
     children:
     - title: "Participate"
       url: /competition-entry/participate

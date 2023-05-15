@@ -51,13 +51,7 @@ defaults:
       author_profile: true
       classes: wide
 
-scholar:
-  style: custom
-  source: _bibliography
-  bibliography_list_tag: p
-  bibliography_item_tag: p
-  bibtex_filters:
-    - latex
+
   
 footer:
   links:

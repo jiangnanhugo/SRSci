@@ -1,6 +1,7 @@
 ## Evaluation Criteria
 
-## Metric Functions
+### Loss Function 
+Here is the list of loss function that is going to be evluated:
 
 - 'neg_mse': Negative mean squared error.
 - 'neg_rmse':  Negative root mean squared error.
@@ -15,7 +16,15 @@
 - 'accuracy(r2)': Accuracy based on R2 value.
 
 
-## Evaluation Scripts
+## Noisy Evaluation
+We also if the proposed method are robust subject to the noises. The following list of noises are considered in the leader board:
+
+- 'normal': [a normal (Gaussian) distribution](https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.normal.html#numpy.random.Generator.normal).
+- 'exponential': [an exponential distribution](https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.exponential.html#numpy.random.Generator.exponential).
+- 'uniform': [a uniform distribution](https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.uniform.html#numpy.random.Generator.uniform).
+- 'laplace': [the Laplace or double exponential distribution with specified location (or mean) and scale (decay)](https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.laplace.html#numpy.random.Generator.laplace).
+- 'logistic': [a logistic distribution](https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.logistic.html#numpy.random.Generator.logistic).
+<!-- ## Evaluation Scripts
 
 After model training, the trained models are assessed for symbolic equivalence with the ground-truth data-generating processes. 
 This is handled in [evaluate.py](evaluate.py). 
@@ -27,4 +36,4 @@ python evaluate.py \
 -noise_type uniform \ # noise type
 -noise_rate 0.01 \ # noise rate
 -results ../path_to_result_file \ # save your Top-10 best predicted expressions into this file
-```
+``` -->
