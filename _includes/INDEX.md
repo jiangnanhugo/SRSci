@@ -39,7 +39,8 @@ Your program needs to write the symbolic equation you find into a pre-specified 
 
 
 ## Competition Tracks
-[\[Provide a table of time limit, noise type, dataset\]]()
+[\[Provide a table of time limit, noise type, dataset\]].
+
 |                |     Time |
 |---------------:|---------:|
 | <= 3 variables | 0.5 hour |
@@ -51,7 +52,7 @@ Your program needs to write the symbolic equation you find into a pre-specified 
 ## How We will Evaluate?
 We will randomly generate a minibatch of input $X$, and obtain the ground-truth output $f(X)$, and your prediction $\hat{f}(X)$. Here $\hat{f}$ is the symbolic equation you wrote in the output file. We will report the symbolic equation complexity (measured as the number of nodes in the expression tree), and various loss functions between $f(X)$ and $\hat{f}(X)$. All the reported values will be the median value across all the equations considered in a single competition track.
 
-Here is the [\[page\]](/results/evaluation-criteria/#evaluation-criteria) describing all the loss functions.
+Here is the [\[page\]](/srsci/results/evaluation-criteria/#evaluation-criteria) describing all the loss functions.
 
 Here is the [\[page\]] describing our computational environment of evaluation.
 
