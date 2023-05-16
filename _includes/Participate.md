@@ -34,23 +34,23 @@ def evaluate(self, X)
 This method can be used as the oracle. When queried by the input $X$, it returns noisy estimations of . Here, The datatype of $X$ is `numpy.ndarray`. It is a matrix. The first dimension corresponds to the batch size and the second dimension corresponds to `number_of_variables`. Basically, each row of $X$ represents one input to the symbolic expression. The output of evaluate will be a vector, where the $i$-th output is the noisy estimation of .
 
 - Other useful functions of the Equation_evaluator class are:
-```bash
+```python
 def get_nvars(self)
 ```
 This function returns the number of input variables of the symbolic equation.
-```bash
+```python
 def get_function_set(self)
 ```
 This function returns the set of operators possibly used in the symbolic equation. An example output looks like:
 ```python
 {'sin: 1, 'cos': 1, '+': 2, '-' : 2, '*' : 2, '/': 2, 'const': 0}
 ```
-This output means the ground-truth equation may contain `+, -, *, /` as binary operators, sin and cos functions as unary operators and real-valued constants. The numbers as the values of the dictionary denote the arity of the operators. The full set of operators we consider are [xxxxxxxxxxxxx]. Each competition track will use a subset of all operators.
+This output means the ground-truth equation may contain `add, sub, mul, div` as binary operators, `sin` and `cos` functions as unary operators and real-valued constants. The numbers as the values of the dictionary denote the arity of the operators. The full set of operators we consider are `[sin, cos, exp, log, pow, inv,add, sub, mul, div]`. Each competition track will use a subset of all operators.
 
 ## Output Requirements
 - You will need to write the symbolic equation that you found into the output file. The output file contains only one line, the pre-order of the equation you have found. For example, the following line can be one valid equation in the output file:
 ```python
-[('+','binary'), ('*', 'binary'), ('0.1', 'const'), ('X1', 'var'), ('sin', 'unary'), ('X2', 'var')]
+[('add','binary'), ('mul', 'binary'), ('0.1', 'const'), ('X_1', 'var'), ('sin', 'unary'), ('X_2', 'var')]
 ```
 This represents the equation `0.1*X1 + sin(X2)`. You need to write `binary` behind all binary operators and `unary` behind all unary operators (there are only these two types). Constants need to be followed by a string const, and variables followed by a string var.
 [\[Here is some explanation on what is the preorder traversal of an equation\]](/srsci/file-formats/expression-format/).

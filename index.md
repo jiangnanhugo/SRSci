@@ -20,4 +20,3 @@ MathJax = {
 
 {% capture my_include %}{% include INDEX.md %}{% endcapture %}
 {{ my_include | markdownify }}
-

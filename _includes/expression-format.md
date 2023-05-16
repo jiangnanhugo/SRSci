@@ -1,15 +1,15 @@
-Here we use an example symbolic expression "`0.1 * X1 + sin(X2)`".
+Here we use an example symbolic expression "$0.1 * X_1 + \sin(X_2)$".
 ## Expression Tree
 It is a specific kind of binary tree used to represent expressions. 
 
 ### Example
-The expression "`0.1 * X1 + sin(X2)`" can be represented as the following tree:
+The expression "$0.1 * X_1 + \sin(X_2)$" can be represented as the following tree:
 ```bash
-        '+'
-      /      \
-    '*'      'sin'
-   /   \       |
-'0.1'  'X1'   'X2'    
+        'add'
+      /       \
+    'mul'      'sin'
+   /   \         |
+'0.1'  'X_1'   'X_2'    
 ```
 Notice that the expression tree is not unique for the given symbolic expression. But gvien the expression tree, it can uniquely determine the symbolic expression.
 
@@ -18,7 +18,7 @@ In a preorder traversal of a binary tree, we first *visit* a node,  then travers
 
 Using the above expression tree, the pre-order traversal is:
 ```python
-['+', '*', '0.1', 'X1', 'sin','X2']
+['add', 'mul', '0.1', 'X_1', 'sin','X_2']
 ```
 
 ## Extended Pre-order Traversal Format
@@ -30,12 +30,12 @@ Therefore, we define the **extended** format based on the Pre-order Traversal.
 
 ### Example
 ```python
-[('+','binary'), ('*', 'binary'), ('0.1', 'const'), ('X1', 'var'), ('sin', 'unary'), ('X2', 'var')]
+[('add','binary'), ('mul', 'binary'), ('0.1', 'const'), ('X_1', 'var'), ('sin', 'unary'), ('X_2', 'var')]
 ```
 It implies:
-- '+', '*', '/' are binary operators, noted as 'binary';
+- 'add', 'mul' are binary operators, noted as 'binary';
 - 'sin' is a unary operator, noted as 'unary';
 - '0.1' is a constant, noted as 'const';
-- 'X1', 'X2' are input variables, noted as 'var'.
+- 'X_1', 'X_2' are input variables, noted as 'var'.
 
 Based on this list in *extended pre-order traversal format*, we can uniquely determine the expression tree and further uniquely determine its symbolic expression.

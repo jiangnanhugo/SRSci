@@ -7,6 +7,7 @@ Automating scientific discovery has been a grand goal dating back to the founder
 Symbolic regression discovers an underlying equation that maps from the input to the output of a given dataset. It is one of the best benchmarking tasks for scientific discovery, as it mimics the process of discovering physics laws from experimental data. Over the years, much effort has been made toward symbolic regression, including search-based methods [13, 15], genetic programming [27, 29, 25, 5], reinforcement learning [21, 26, 20, 21], deep function approximation [19, 2, 23, 22, 17, 31, 3, 7, 1], and integrated systems [28, 10, 9, 16]. Most endeavor focuses on horizontal discovery paths, i.e., they directly search for the best equation in the full hypothesis space involving all independent variables (red path in Figure). This path can be challenging because of the **exponentially large** full hypothesis space.
 
 
+<br/><br/>
 
 ![example.png](/srsci/assets/images/example.png){: style="float: right"}
 
@@ -39,12 +40,12 @@ Your program needs to write the symbolic equation you find into a pre-specified 
 
 
 ## Competition Tracks
-[\[Provide a table of time limit, noise type, dataset\]].
+[\[Provide a table of time limit, noise type, dataset\]](/srsci/competition-entry/requirements/#environmental-requirements).
 
-|                |     Time |
+<!-- |                |     Time |
 |---------------:|---------:|
 | <= 3 variables | 0.5 hour |
-| <=10 variables |   3 hour |
+| <=10 variables |   3 hour | -->
 
 ## How to Participate?
 [Go to the page of how to participate](/srsci/competition-entry/participate/)
