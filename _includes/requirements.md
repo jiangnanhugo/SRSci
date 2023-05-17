@@ -58,11 +58,11 @@ dependencies:
   - python=3.8
 ```
 this example specifies the Python version to be `3.8` and also specifies installing `numpy`, `pandas`, and `pip` packages with their corresponding version numbers. The name of this environment **must be** `YOUR_ALGOITHM_NAME`. We will install this specified Python environment via the following command:
-```
+```bash
 conda env create -f environment.yml
 ```
 Then we will run the following command to switch to your specified Python environment:
-```
+```bash
 conda activate YOUR_ALGOITHM_NAME
 ```
 See a detailed discussion of the Python environment at [this link](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
