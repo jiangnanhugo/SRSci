@@ -43,7 +43,7 @@ def get_function_set(self)
 ```
 This function returns the set of operators possibly used in the symbolic equation. An example output looks like:
 ```python
-{'sin: 1, 'cos': 1, 'add': 2, 'sub' : 2, 'mul' : 2, 'div': 2, 'const': 0}
+{'sin': 1, 'cos': 1, 'add': 2, 'sub' : 2, 'mul' : 2, 'div': 2, 'const': 0}
 ```
 This output means the ground-truth equation may contain `add, sub, mul, div` as binary operators, `sin` and `cos` functions as unary operators and real-valued constants. The numbers as the values of the dictionary denote the arity of the operators. The full set of operators we consider are `[sin, cos, exp, log, pow, inv,add, sub, mul, div]`. Each competition track will use a subset of all operators.
 
