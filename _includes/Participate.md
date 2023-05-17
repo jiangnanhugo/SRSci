@@ -31,7 +31,7 @@ Where the `input_eq_name` denotes the input file name passed from the command li
 ```python
 def evaluate(self, X)
 ```
-This method can be used as the oracle. When queried by the input $X$, it returns noisy estimations of . Here, The datatype of $X$ is `numpy.ndarray`. It is a matrix. The first dimension corresponds to the batch size and the second dimension corresponds to `number_of_variables`. Basically, each row of $X$ represents one input to the symbolic expression. The output of evaluate will be a vector, where the $i$-th output is the noisy estimation of .
+This method can be used as the oracle. When queried by the input $X$, it returns noisy estimations of $f(X)$. Here, The datatype of $X$ is `numpy.ndarray`. It is a matrix. The first dimension corresponds to the batch size and the second dimension corresponds to `number_of_variables`. Basically, each row of $X$ represents one input to the symbolic expression. The output of evaluate will be a vector, where the $i$-th output is the noisy estimation of $f(X)_i$.
 
 - Other useful functions of the Equation_evaluator class are:
 ```python
@@ -43,7 +43,7 @@ def get_function_set(self)
 ```
 This function returns the set of operators possibly used in the symbolic equation. An example output looks like:
 ```python
-{'sin: 1, 'cos': 1, '+': 2, '-' : 2, '*' : 2, '/': 2, 'const': 0}
+{'sin: 1, 'cos': 1, 'add': 2, 'sub' : 2, 'mul' : 2, 'div': 2, 'const': 0}
 ```
 This output means the ground-truth equation may contain `add, sub, mul, div` as binary operators, `sin` and `cos` functions as unary operators and real-valued constants. The numbers as the values of the dictionary denote the arity of the operators. The full set of operators we consider are `[sin, cos, exp, log, pow, inv,add, sub, mul, div]`. Each competition track will use a subset of all operators.
 
