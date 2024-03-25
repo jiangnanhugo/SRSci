@@ -1,5 +1,5 @@
 ---
-title: Symbolic Regression Competition - 2023
+title: Symbolic Regression Competition - 2024
 permalink: /competition-entry/
 classes: wide
 toc: false
